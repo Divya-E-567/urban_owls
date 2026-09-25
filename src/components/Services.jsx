@@ -51,7 +51,7 @@ const servicesData = [
   {
     icon: <Search size={24} />,
     title: 'SEO (Search Engine Optimization)',
-    description: 'Technical audits, site-architecture optimization, and premium copywriting designed to position your pages at the top of organic search results.'
+    description: <span>Technical audits, site-architecture optimization, and premium copywriting designed to position pages at the top of organic search results. We help brands establish authority to be recognized as the <Link to="/best-digital-marketing-kochi" style={{ textDecoration: 'underline', color: 'var(--accent-gold)' }}>best digital marketing company in Kochi</Link>.</span>
   },
   {
     icon: <TrendingUp size={24} />,
@@ -66,7 +66,7 @@ const servicesData = [
   {
     icon: <Building size={24} />,
     title: 'Local SEO & Maps Optimization',
-    description: 'Dominate local maps grids. Structured citation syndication, local keyword targeting, and automated review strategies for local market dominance.'
+    description: <span>Dominate local maps grids. Structured citation syndication, local keyword targeting, and automated review strategies for local market dominance. We help regional entities position their maps visibility to rank as the <Link to="/best-digital-marketing-kochi" style={{ textDecoration: 'underline', color: 'var(--accent-gold)' }}>best digital marketing agency in Kochi</Link>.</span>
   },
   {
     icon: <Cpu size={24} />,
@@ -121,6 +121,7 @@ const Services = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
+          className="services-grid"
           style={{
             display: 'grid',
             gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))',
@@ -146,19 +147,21 @@ const Services = () => {
                 e.currentTarget.style.setProperty('--mouse-y', `${y}px`);
               }}
             >
-              {/* Silver/Charcoal Icon container */}
+              {/* Brand Navy/Gold Icon container */}
               <div
                 style={{
                   width: '50px',
                   height: '50px',
                   borderRadius: '12px',
-                  backgroundColor: 'rgba(0, 0, 0, 0.04)',
-                  border: '1px solid rgba(0, 0, 0, 0.06)',
-                  color: 'var(--accent-charcoal)',
+                  backgroundColor: 'rgba(8, 17, 37, 0.04)',
+                  border: '1px solid rgba(8, 17, 37, 0.08)',
+                  color: 'var(--accent-gold)',
                   display: 'flex',
                   alignItems: 'center',
-                  justifyContent: 'center'
+                  justifyContent: 'center',
+                  transition: 'all 0.3s ease'
                 }}
+                className="service-icon-box"
               >
                 {service.icon}
               </div>
@@ -184,6 +187,23 @@ const Services = () => {
         </div>
 
       </div>
+      <style>{`
+        .luxury-card:hover .service-icon-box {
+          background-color: var(--accent-navy) !important;
+          color: #ffffff !important;
+          transform: scale(1.05);
+        }
+        @media (max-width: 576px) {
+          .services-grid {
+            grid-template-columns: 1fr !important;
+            gap: 18px !important;
+          }
+          .luxury-card {
+            padding: 24px !important;
+            text-align: left !important;
+          }
+        }
+      `}</style>
     </section>
   );
 };

@@ -1,7 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Shield, Sparkles, Brain } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import Process from '../components/Process';
+import Team from '../components/Team';
 
 const About = () => {
   return (
@@ -25,48 +26,37 @@ const About = () => {
                 Urban Owls Digital was founded on a simple principle: businesses deserve websites that look stunning and perform flawlessly. We refuse to use cheap, bloated templates. Instead, we write clean, proprietary platforms and design interfaces with Apple-level minimalist restraint.
               </p>
               <p style={{ color: 'var(--text-secondary)', fontSize: '16px', lineHeight: 1.8, fontWeight: 300 }}>
-                Whether you need a high-converting corporate website, a lightning-fast headless e-commerce store, or visibility campaigns on Google and AI search engines, our team of dedicated designers and software developers delivers Awwwards-quality digital assets.
+                Whether you need a high-converting corporate website, a lightning-fast headless e-commerce store, or visibility campaigns on Google and AI search engines, our team of dedicated designers and software developers delivers Awwwards-quality digital assets. We are proud to serve as a leading <Link to="/best-digital-marketing-kochi" style={{ textDecoration: 'underline', color: 'var(--accent-gold)' }}>digital marketing company in Kochi</Link>, helping brands grow organically.
               </p>
             </motion.div>
 
-            {/* Right Card / Graphic */}
+            {/* Right Image / Visual */}
             <motion.div
               initial={{ opacity: 0, x: 30 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
               style={{
-                background: '#ffffff',
-                border: '1px solid var(--border-color)',
-                borderRadius: '20px',
-                padding: '40px',
-                boxShadow: '0 20px 40px rgba(0, 0, 0, 0.02)'
+                position: 'relative',
+                borderRadius: '24px',
+                overflow: 'hidden',
+                minHeight: '420px',
+                boxShadow: '0 20px 40px rgba(0, 0, 0, 0.08)',
+                border: '1px solid var(--border-color)'
               }}
             >
-              <h3 style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '22px', marginBottom: '20px', color: 'var(--text-primary)' }}>Our Core Values</h3>
-              
-              <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '20px' }}>
-                <li style={{ display: 'flex', gap: '12px' }}>
-                  <div style={{ color: 'var(--text-primary)', marginTop: '3px' }}><Sparkles size={18} /></div>
-                  <div>
-                    <h4 style={{ fontSize: '16px', fontFamily: "'Space Grotesk', sans-serif", color: 'var(--text-primary)' }}>Visual Excellence</h4>
-                    <p style={{ color: 'var(--text-secondary)', fontSize: '13px', fontWeight: 300 }}>Carefully selected fonts, luxury cream and soft gray backdrops, and fluid transitions.</p>
-                  </div>
-                </li>
-                <li style={{ display: 'flex', gap: '12px' }}>
-                  <div style={{ color: 'var(--text-primary)', marginTop: '3px' }}><Shield size={18} /></div>
-                  <div>
-                    <h4 style={{ fontSize: '16px', fontFamily: "'Space Grotesk', sans-serif", color: 'var(--text-primary)' }}>Absolute Security</h4>
-                    <p style={{ color: 'var(--text-secondary)', fontSize: '13px', fontWeight: 300 }}>Secure server endpoints, HTTPS setup, database sanitization, and Cloudflare shields.</p>
-                  </div>
-                </li>
-                <li style={{ display: 'flex', gap: '12px' }}>
-                  <div style={{ color: 'var(--text-primary)', marginTop: '3px' }}><Brain size={18} /></div>
-                  <div>
-                    <h4 style={{ fontSize: '16px', fontFamily: "'Space Grotesk', sans-serif", color: 'var(--text-primary)' }}>AI Search Visibility</h4>
-                    <p style={{ color: 'var(--text-secondary)', fontSize: '13px', fontWeight: 300 }}>Configuring data anchors and snippets for AEO and GEO compatibility (ChatGPT/Gemini).</p>
-                  </div>
-                </li>
-              </ul>
+              <img
+                src="/images/hero_mockup.jpeg"
+                alt="Urban Owls Digital workspace"
+                style={{
+                  position: 'absolute',
+                  inset: 0,
+                  width: '100%',
+                  height: '100%',
+                  objectFit: 'cover',
+                  display: 'block'
+                }}
+              />
+
             </motion.div>
 
           </div>
@@ -77,10 +67,20 @@ const About = () => {
       {/* Process Workflow Section */}
       <Process />
 
+      {/* Team Members Section */}
+      <Team />
+
       <style>{`
         @media (max-width: 992px) {
           .about-intro-grid {
             grid-template-columns: 1fr !important;
+            gap: 30px !important;
+          }
+        }
+
+        @media (max-width: 576px) {
+          .about-intro-grid {
+            gap: 24px !important;
           }
         }
       `}</style>

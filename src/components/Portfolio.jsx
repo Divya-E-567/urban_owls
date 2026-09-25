@@ -5,13 +5,13 @@ import { ExternalLink, ArrowRight } from 'lucide-react';
 const localBackupProjects = [
   {
     _id: '1',
-    title: 'Pest Control India',
+    title: 'EcoPest',
     category: 'Corporate Website',
     image: '/images/pest_control.jpg',
-    description: 'A premium corporate digital channel engineered for India\'s leading pest control provider. Built with advanced service scheduling APIs, real-time location branches mapping, and optimized lead flows.',
-    liveUrl: 'https://pestcontrolindia.com',
-    caseStudyUrl: 'https://pestcontrolindia.com',
-    tags: ['Corporate Portal', 'Scheduling Systems', 'SEO Growth', 'Speed Audits']
+    description: 'A high-converting pest control website built for EcoPest, featuring service-led content, local trust signals, and a polished experience tailored for Kerala homeowners and businesses.',
+    liveUrl: 'https://ecopestindia.com/',
+    caseStudyUrl: 'https://ecopestindia.com/',
+    tags: ['Corporate Portal', 'Local Trust', 'SEO Growth', 'Lead Capture']
   },
   {
     _id: '2',
@@ -95,7 +95,7 @@ const Portfolio = () => {
         </div>
 
         {/* Filter Buttons */}
-        <div style={{ display: 'flex', justifyContent: 'center', gap: '12px', flexWrap: 'wrap', marginBottom: '50px' }}>
+        <div className="portfolio-filters" style={{ display: 'flex', justifyContent: 'center', gap: '12px', flexWrap: 'wrap', marginBottom: '50px' }}>
           {categories.map(cat => (
             <button
               key={cat}
@@ -132,11 +132,12 @@ const Portfolio = () => {
                 style={{
                   background: '#ffffff',
                   border: '1px solid var(--border-color)',
-                  borderRadius: '20px',
+                  borderRadius: 'var(--radius-lg)',
                   overflow: 'hidden',
                   display: 'flex',
                   flexDirection: 'column',
-                  boxShadow: '0 15px 30px rgba(0,0,0,0.02)'
+                  boxShadow: 'var(--shadow-premium)',
+                  transition: 'var(--transition-smooth)'
                 }}
                 className="portfolio-card"
               >
@@ -187,9 +188,10 @@ const Portfolio = () => {
                         key={tag}
                         style={{
                           fontSize: '11px',
-                          color: 'var(--text-secondary)',
-                          background: 'var(--bg-gray)',
-                          border: '1px solid var(--border-color)',
+                          fontWeight: 500,
+                          color: 'var(--accent-gold)',
+                          background: 'rgba(217, 138, 41, 0.05)',
+                          border: '1px solid rgba(217, 138, 41, 0.15)',
                           padding: '4px 10px',
                           borderRadius: '6px'
                         }}
@@ -251,18 +253,34 @@ const Portfolio = () => {
           }
         }
         @media (max-width: 576px) {
+          .portfolio-filters {
+            justify-content: flex-start !important;
+            gap: 8px !important;
+          }
+          .portfolio-filters button {
+            flex: 1 1 calc(50% - 8px) !important;
+            justify-content: center !important;
+          }
           .portfolio-img-wrapper {
             height: 220px !important;
           }
+          .portfolio-card {
+            text-align: left !important;
+          }
+        }
+        .portfolio-card:hover {
+          transform: translateY(-6px);
+          border-color: var(--accent-gold) !important;
+          box-shadow: var(--shadow-gold-glow) !important;
         }
         .portfolio-card:hover .portfolio-image {
           transform: scale(1.05);
         }
         .live-link:hover {
-          color: var(--text-secondary) !important;
+          color: var(--accent-gold) !important;
         }
         .case-link:hover {
-          color: var(--text-primary) !important;
+          color: var(--accent-gold) !important;
         }
       `}</style>
     </section>
