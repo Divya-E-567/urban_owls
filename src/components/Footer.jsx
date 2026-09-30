@@ -74,7 +74,8 @@ const Footer = () => {
               <li><Link to="/services">AEO & GEO Optimization</Link></li>
               <li><Link to="/services">Bespoke Brand Identities</Link></li>
               <li><Link to="/services">Custom Web Applications</Link></li>
-              <li><Link to="/best-digital-marketing-kochi">Digital Marketing Kochi</Link></li>
+              <li><Link to="/best-digital-marketing-kochi">Digital Marketing Company Kochi</Link></li>
+              <li><Link to="/best-digital-marketing-agency-kochi">Digital Marketing Agency Kochi</Link></li>
               <li><Link to="/google-ads-agency-kochi">Google Ads Kochi</Link></li>
               <li><Link to="/social-media-marketing-kochi">Social Media Kochi</Link></li>
             </ul>

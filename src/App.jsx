@@ -18,6 +18,7 @@ import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsConditions from './pages/TermsConditions';
 import Internship from './pages/Internship';
 import BestDigitalMarketingKochi from './pages/BestDigitalMarketingKochi';
+import BestDigitalMarketingAgencyKochi from './pages/BestDigitalMarketingAgencyKochi';
 import GoogleAdsAgencyKochi from './pages/GoogleAdsAgencyKochi';
 import SocialMediaMarketingKochi from './pages/SocialMediaMarketingKochi';
 
@@ -48,6 +49,7 @@ function App() {
               <Route path="/terms" element={<TermsConditions />} />
               <Route path="/internship" element={<Internship />} />
               <Route path="/best-digital-marketing-kochi" element={<BestDigitalMarketingKochi />} />
+              <Route path="/best-digital-marketing-agency-kochi" element={<BestDigitalMarketingAgencyKochi />} />
               <Route path="/google-ads-agency-kochi" element={<GoogleAdsAgencyKochi />} />
               <Route path="/social-media-marketing-kochi" element={<SocialMediaMarketingKochi />} />
             </Routes>
