@@ -21,19 +21,20 @@ import {
   Send, 
   AlertTriangle, 
   CheckCircle, 
-  Zap
+  Zap,
+  ShoppingBag
 } from 'lucide-react';
 
 const servicesList = [
-  'Full-Funnel Digital Growth (SEO + AEO + GEO)',
+  'Digital Marketing & Performance Ads',
+  'Web Development (React / MERN Stack)',
   'Search Engine Optimization (SEO)',
-  'Answer Engine Optimization (AEO)',
-  'Generative Engine Optimization (GEO)',
+  'E-Commerce Website Development',
+  'Full-Funnel Digital Growth (SEO + AEO + GEO)',
   'Google Ads (PPC) Management',
   'Social Media Marketing (Meta / Instagram)',
-  'High-Conversion UI/UX Web Design',
   'Local SEO & Google Business Profile',
-  'Brand Identity & Content Strategy'
+  'Answer Engine Optimization (AEO & GEO)'
 ];
 
 const faqs = [
@@ -71,7 +72,7 @@ const faqs = [
   },
   {
     q: "What industries does Urban Owls Digital specialize in?",
-    a: "We have proven case studies across Real Estate, Healthcare & Medical Centers, Luxury Retail, E-Commerce, Tourism & Hospitality, B2B IT/SaaS firms in Infopark, Education & EdTech, and Professional Legal/Financial services."
+    a: "We deliver specialized solutions across Real Estate, Healthcare & Medical Centers, Luxury Retail, E-Commerce, Tourism & Hospitality, B2B IT/SaaS firms in Infopark, Education & EdTech, and Professional Legal/Financial services through our four core capabilities: Digital Marketing, Web Development, SEO, and E-Commerce Websites."
   },
   {
     q: "How does AEO help win Voice Search and Google AI Overviews?",
@@ -262,38 +263,38 @@ const BestDigitalMarketingAgencyKochi = () => {
           ],
           "hasOfferCatalog": {
             "@type": "OfferCatalog",
-            "name": "Digital Marketing & AI Optimization Services",
+            "name": "Core Digital Marketing & Web Engineering Services",
             "itemListElement": [
               {
                 "@type": "Offer",
                 "itemOffered": {
                   "@type": "Service",
+                  "name": "Digital Marketing",
+                  "description": "Full-funnel performance marketing, Google Ads, Meta campaigns, and high-ROI conversion funnels."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Web Development",
+                  "description": "High-performance custom React, MERN stack web applications and enterprise corporate portals."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
                   "name": "Search Engine Optimization (SEO)",
-                  "description": "Enterprise technical and local search optimization."
+                  "description": "Technical SEO, Google Business Profile local dominance, AEO voice search, and GEO generative AI citations."
                 }
               },
               {
                 "@type": "Offer",
                 "itemOffered": {
                   "@type": "Service",
-                  "name": "Answer Engine Optimization (AEO)",
-                  "description": "Voice search and featured snippet answer optimization."
-                }
-              },
-              {
-                "@type": "Offer",
-                "itemOffered": {
-                  "@type": "Service",
-                  "name": "Generative Engine Optimization (GEO)",
-                  "description": "Optimizing entity visibility across ChatGPT, Gemini, and Claude."
-                }
-              },
-              {
-                "@type": "Offer",
-                "itemOffered": {
-                  "@type": "Service",
-                  "name": "PPC & Google Ads Management",
-                  "description": "High-converting paid search, shopping, and display campaigns."
+                  "name": "E-Commerce Websites",
+                  "description": "End-to-end e-commerce store architecture, secure payment gateways, shopping feeds, and checkout optimization."
                 }
               }
             ]
@@ -890,92 +891,259 @@ const BestDigitalMarketingAgencyKochi = () => {
         </div>
       </section>
 
-      {/* 8. CLIENT RESULTS & CASE PROOF */}
-      <section style={{ background: 'var(--bg-white)', borderBottom: '1px solid var(--border-color)' }} className="section-padding">
+      {/* 8. OUR 4 CORE SPECIALIZATIONS: DIGITAL MARKETING, WEB DEVELOPMENT, SEO & E-COMMERCE */}
+      <section style={{ background: 'var(--bg-white)', borderBottom: '1px solid var(--border-color)' }} className="section-padding" id="core-services">
         <div className="container">
-          <div style={{ textAlign: 'center', maxWidth: '800px', margin: '0 auto 60px auto' }}>
-            <span className="subtitle">Verified Outcomes</span>
-            <h2>Proven Case Studies from Our Agency Roster</h2>
+          <div style={{ textAlign: 'center', maxWidth: '850px', margin: '0 auto 60px auto' }}>
+            <span className="subtitle">Core Agency Specializations</span>
+            <h2>What We Do: Digital Marketing, Web Development, SEO & E-Commerce</h2>
             <p style={{ color: 'var(--text-secondary)', fontSize: '16px', lineHeight: 1.7, marginTop: '14px' }}>
-              Real businesses, verified revenue metrics, and enduring digital authority engineered by Urban Owls Digital.
+              At Urban Owls Digital, we engineer cohesive digital ecosystems designed to scale revenue. Rather than fragmented tactics, our company specializes in four core pillars built to dominate modern commercial markets.
             </p>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '24px' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '28px' }}>
             
-            <div style={{ padding: '30px', borderRadius: '18px', border: '1px solid var(--border-color)', background: 'var(--bg-gray)' }}>
-              <div style={{ fontSize: '12px', fontFamily: "var(--font-heading)", color: 'var(--accent-gold)', fontWeight: 700, letterSpacing: '0.1em', marginBottom: '8px' }}>ARCHITECTURE & INTERIOR</div>
-              <h3 style={{ fontSize: '19px', color: 'var(--accent-navy)', marginBottom: '12px' }}>Artivert Luxury Design</h3>
-              <p style={{ fontSize: '13.5px', color: 'var(--text-secondary)', lineHeight: 1.6, marginBottom: '20px' }}>
-                Complete UI/UX web development overhaul combined with GEO optimization and high-intent local search schema.
-              </p>
-              <div style={{ borderTop: '1px solid var(--border-color)', paddingTop: '16px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                <div>
-                  <div style={{ fontSize: '22px', fontWeight: 700, color: 'var(--accent-navy)' }}>+410%</div>
-                  <div style={{ fontSize: '11px', color: 'var(--text-muted)' }}>Organic Enquiries</div>
+            {/* Pillar 1: Digital Marketing */}
+            <div style={{ 
+              padding: '36px 30px', 
+              borderRadius: '20px', 
+              border: '1px solid var(--border-color)', 
+              background: '#ffffff',
+              boxShadow: 'var(--shadow-premium)',
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'space-between',
+              transition: 'transform 0.3s ease, box-shadow 0.3s ease'
+            }}>
+              <div>
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '20px' }}>
+                  <div style={{ width: '52px', height: '52px', borderRadius: '14px', background: 'rgba(197, 163, 92, 0.12)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--accent-gold)' }}>
+                    <TrendingUp size={26} />
+                  </div>
+                  <span style={{ fontSize: '11px', fontFamily: 'var(--font-heading)', fontWeight: 700, letterSpacing: '0.1em', color: 'var(--accent-gold)', background: 'rgba(197, 163, 92, 0.08)', padding: '6px 12px', borderRadius: '20px', textTransform: 'uppercase' }}>
+                    Pillar 01
+                  </span>
                 </div>
-                <div>
-                  <div style={{ fontSize: '22px', fontWeight: 700, color: 'var(--accent-gold)' }}>Top 3</div>
-                  <div style={{ fontSize: '11px', color: 'var(--text-muted)' }}>Google Map Pack</div>
+                <h3 style={{ fontSize: '21px', color: 'var(--accent-navy)', marginBottom: '14px' }}>
+                  Digital Marketing
+                </h3>
+                <p style={{ fontSize: '14px', color: 'var(--text-secondary)', lineHeight: 1.7, marginBottom: '22px' }}>
+                  High-ROI, performance-first marketing that turns ad spend into profitable revenue. We design precision paid media funnels across Google Ads, Meta (Instagram & Facebook), and LinkedIn with relentless conversion tracking.
+                </p>
+                <div style={{ borderTop: '1px solid var(--border-color)', paddingTop: '18px', marginBottom: '20px' }}>
+                  <div style={{ fontSize: '12px', fontWeight: 700, color: 'var(--text-primary)', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '12px' }}>
+                    Key Focus Areas:
+                  </div>
+                  <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '9px', fontSize: '13px', color: 'var(--text-secondary)' }}>
+                    <li style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                      <CheckCircle2 size={15} color="var(--accent-gold)" style={{ flexShrink: 0 }} /> Google Search & Performance Max Ads
+                    </li>
+                    <li style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                      <CheckCircle2 size={15} color="var(--accent-gold)" style={{ flexShrink: 0 }} /> Meta & Instagram Lead Generation Funnels
+                    </li>
+                    <li style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                      <CheckCircle2 size={15} color="var(--accent-gold)" style={{ flexShrink: 0 }} /> Conversion Rate Optimization (CRO)
+                    </li>
+                    <li style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                      <CheckCircle2 size={15} color="var(--accent-gold)" style={{ flexShrink: 0 }} /> Server-Side GA4 & Meta CAPI Attribution
+                    </li>
+                  </ul>
                 </div>
+              </div>
+              <div style={{ background: 'var(--bg-gray)', padding: '12px 16px', borderRadius: '12px', fontSize: '12px', fontWeight: 600, color: 'var(--accent-navy)' }}>
+                Targeting: High-Intent Kerala, Indian & GCC Demographics
               </div>
             </div>
 
-            <div style={{ padding: '30px', borderRadius: '18px', border: '1px solid var(--border-color)', background: 'var(--bg-gray)' }}>
-              <div style={{ fontSize: '12px', fontFamily: "var(--font-heading)", color: 'var(--accent-gold)', fontWeight: 700, letterSpacing: '0.1em', marginBottom: '8px' }}>E-COMMERCE & D2C</div>
-              <h3 style={{ fontSize: '19px', color: 'var(--accent-navy)', marginBottom: '12px' }}>Coolwing HVAC Online</h3>
-              <p style={{ fontSize: '13.5px', color: 'var(--text-secondary)', lineHeight: 1.6, marginBottom: '20px' }}>
-                Google Shopping Ads, Performance Max campaigns, and technical SEO schema for 100+ product categories.
-              </p>
-              <div style={{ borderTop: '1px solid var(--border-color)', paddingTop: '16px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                <div>
-                  <div style={{ fontSize: '22px', fontWeight: 700, color: 'var(--accent-navy)' }}>3.8x</div>
-                  <div style={{ fontSize: '11px', color: 'var(--text-muted)' }}>Average ROAS</div>
+            {/* Pillar 2: Web Development */}
+            <div style={{ 
+              padding: '36px 30px', 
+              borderRadius: '20px', 
+              border: '1px solid var(--border-color)', 
+              background: '#ffffff',
+              boxShadow: 'var(--shadow-premium)',
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'space-between',
+              transition: 'transform 0.3s ease, box-shadow 0.3s ease'
+            }}>
+              <div>
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '20px' }}>
+                  <div style={{ width: '52px', height: '52px', borderRadius: '14px', background: 'rgba(8, 17, 37, 0.06)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--accent-navy)' }}>
+                    <Code size={26} />
+                  </div>
+                  <span style={{ fontSize: '11px', fontFamily: 'var(--font-heading)', fontWeight: 700, letterSpacing: '0.1em', color: 'var(--accent-navy)', background: 'rgba(8, 17, 37, 0.05)', padding: '6px 12px', borderRadius: '20px', textTransform: 'uppercase' }}>
+                    Pillar 02
+                  </span>
                 </div>
-                <div>
-                  <div style={{ fontSize: '22px', fontWeight: 700, color: 'var(--accent-gold)' }}>-42%</div>
-                  <div style={{ fontSize: '11px', color: 'var(--text-muted)' }}>Cost Per Acquisition</div>
+                <h3 style={{ fontSize: '21px', color: 'var(--accent-navy)', marginBottom: '14px' }}>
+                  Web Development
+                </h3>
+                <p style={{ fontSize: '14px', color: 'var(--text-secondary)', lineHeight: 1.7, marginBottom: '22px' }}>
+                  Custom-engineered, lightning-fast web applications and corporate websites. We replace slow, generic templates with high-performance React and MERN stack architectures that captivate visitors and convert them into buyers.
+                </p>
+                <div style={{ borderTop: '1px solid var(--border-color)', paddingTop: '18px', marginBottom: '20px' }}>
+                  <div style={{ fontSize: '12px', fontWeight: 700, color: 'var(--text-primary)', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '12px' }}>
+                    Key Focus Areas:
+                  </div>
+                  <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '9px', fontSize: '13px', color: 'var(--text-secondary)' }}>
+                    <li style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                      <CheckCircle2 size={15} color="var(--accent-gold)" style={{ flexShrink: 0 }} /> Custom React, Vite & MERN Full-Stack Apps
+                    </li>
+                    <li style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                      <CheckCircle2 size={15} color="var(--accent-gold)" style={{ flexShrink: 0 }} /> Sub-0.6s Core Web Vitals Loading Speeds
+                    </li>
+                    <li style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                      <CheckCircle2 size={15} color="var(--accent-gold)" style={{ flexShrink: 0 }} /> Responsive Mobile-First Luxury UI/UX
+                    </li>
+                    <li style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                      <CheckCircle2 size={15} color="var(--accent-gold)" style={{ flexShrink: 0 }} /> Enterprise Security & CRM/WhatsApp APIs
+                    </li>
+                  </ul>
                 </div>
+              </div>
+              <div style={{ background: 'var(--bg-gray)', padding: '12px 16px', borderRadius: '12px', fontSize: '12px', fontWeight: 600, color: 'var(--accent-navy)' }}>
+                Engineering: React • Vite • Node.js • Express • MongoDB
               </div>
             </div>
 
-            <div style={{ padding: '30px', borderRadius: '18px', border: '1px solid var(--border-color)', background: 'var(--bg-gray)' }}>
-              <div style={{ fontSize: '12px', fontFamily: "var(--font-heading)", color: 'var(--accent-gold)', fontWeight: 700, letterSpacing: '0.1em', marginBottom: '8px' }}>TRAVEL & HOSPITALITY</div>
-              <h3 style={{ fontSize: '19px', color: 'var(--accent-navy)', marginBottom: '12px' }}>San Travels Booking</h3>
-              <p style={{ fontSize: '13.5px', color: 'var(--text-secondary)', lineHeight: 1.6, marginBottom: '20px' }}>
-                Geofenced Search campaigns targeting airport transit bookings in Kochi and pilgrimage tourism corridors.
-              </p>
-              <div style={{ borderTop: '1px solid var(--border-color)', paddingTop: '16px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                <div>
-                  <div style={{ fontSize: '22px', fontWeight: 700, color: 'var(--accent-navy)' }}>+520%</div>
-                  <div style={{ fontSize: '11px', color: 'var(--text-muted)' }}>Direct Bookings</div>
+            {/* Pillar 3: Search Engine Optimization (SEO) */}
+            <div style={{ 
+              padding: '36px 30px', 
+              borderRadius: '20px', 
+              border: '1px solid var(--border-color)', 
+              background: '#ffffff',
+              boxShadow: 'var(--shadow-premium)',
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'space-between',
+              transition: 'transform 0.3s ease, box-shadow 0.3s ease'
+            }}>
+              <div>
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '20px' }}>
+                  <div style={{ width: '52px', height: '52px', borderRadius: '14px', background: 'rgba(197, 163, 92, 0.12)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--accent-gold)' }}>
+                    <Search size={26} />
+                  </div>
+                  <span style={{ fontSize: '11px', fontFamily: 'var(--font-heading)', fontWeight: 700, letterSpacing: '0.1em', color: 'var(--accent-gold)', background: 'rgba(197, 163, 92, 0.08)', padding: '6px 12px', borderRadius: '20px', textTransform: 'uppercase' }}>
+                    Pillar 03
+                  </span>
                 </div>
-                <div>
-                  <div style={{ fontSize: '22px', fontWeight: 700, color: 'var(--accent-gold)' }}>#1</div>
-                  <div style={{ fontSize: '11px', color: 'var(--text-muted)' }}>Target Local Keywords</div>
+                <h3 style={{ fontSize: '21px', color: 'var(--accent-navy)', marginBottom: '14px' }}>
+                  Search Engine Optimization (SEO)
+                </h3>
+                <p style={{ fontSize: '14px', color: 'var(--text-secondary)', lineHeight: 1.7, marginBottom: '22px' }}>
+                  Next-generation organic search dominance combining traditional Google rankings with modern Answer Engine (AEO) and Generative AI (GEO) optimization, ensuring your brand ranks #1 in search and AI recommendations.
+                </p>
+                <div style={{ borderTop: '1px solid var(--border-color)', paddingTop: '18px', marginBottom: '20px' }}>
+                  <div style={{ fontSize: '12px', fontWeight: 700, color: 'var(--text-primary)', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '12px' }}>
+                    Key Focus Areas:
+                  </div>
+                  <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '9px', fontSize: '13px', color: 'var(--text-secondary)' }}>
+                    <li style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                      <CheckCircle2 size={15} color="var(--accent-gold)" style={{ flexShrink: 0 }} /> Technical On-Page, Off-Page & Schema Graphs
+                    </li>
+                    <li style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                      <CheckCircle2 size={15} color="var(--accent-gold)" style={{ flexShrink: 0 }} /> Google Business Profile (GBP) Local 3-Pack
+                    </li>
+                    <li style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                      <CheckCircle2 size={15} color="var(--accent-gold)" style={{ flexShrink: 0 }} /> Answer Engine Optimization (AEO) for Voice Search
+                    </li>
+                    <li style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                      <CheckCircle2 size={15} color="var(--accent-gold)" style={{ flexShrink: 0 }} /> Generative Engine Optimization (GEO AI Citations)
+                    </li>
+                  </ul>
                 </div>
+              </div>
+              <div style={{ background: 'var(--bg-gray)', padding: '12px 16px', borderRadius: '12px', fontSize: '12px', fontWeight: 600, color: 'var(--accent-navy)' }}>
+                Platforms: Google Search • Google Maps • ChatGPT • Gemini
               </div>
             </div>
 
-            <div style={{ padding: '30px', borderRadius: '18px', border: '1px solid var(--border-color)', background: 'var(--bg-gray)' }}>
-              <div style={{ fontSize: '12px', fontFamily: "var(--font-heading)", color: 'var(--accent-gold)', fontWeight: 700, letterSpacing: '0.1em', marginBottom: '8px' }}>EDUCATION & TECH</div>
-              <h3 style={{ fontSize: '19px', color: 'var(--accent-navy)', marginBottom: '12px' }}>SkillHub Digital Academy</h3>
-              <p style={{ fontSize: '13.5px', color: 'var(--text-secondary)', lineHeight: 1.6, marginBottom: '20px' }}>
-                Programmatic student recruitment funnels, curriculum AEO optimization, and Meta Instagram Lead ads.
-              </p>
-              <div style={{ borderTop: '1px solid var(--border-color)', paddingTop: '16px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                <div>
-                  <div style={{ fontSize: '22px', fontWeight: 700, color: 'var(--accent-navy)' }}>+180%</div>
-                  <div style={{ fontSize: '11px', color: 'var(--text-muted)' }}>Qualified Enquiries</div>
+            {/* Pillar 4: E-Commerce Websites */}
+            <div style={{ 
+              padding: '36px 30px', 
+              borderRadius: '20px', 
+              border: '1px solid var(--border-color)', 
+              background: '#ffffff',
+              boxShadow: 'var(--shadow-premium)',
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'space-between',
+              transition: 'transform 0.3s ease, box-shadow 0.3s ease'
+            }}>
+              <div>
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '20px' }}>
+                  <div style={{ width: '52px', height: '52px', borderRadius: '14px', background: 'rgba(8, 17, 37, 0.06)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--accent-navy)' }}>
+                    <ShoppingBag size={26} />
+                  </div>
+                  <span style={{ fontSize: '11px', fontFamily: 'var(--font-heading)', fontWeight: 700, letterSpacing: '0.1em', color: 'var(--accent-navy)', background: 'rgba(8, 17, 37, 0.05)', padding: '6px 12px', borderRadius: '20px', textTransform: 'uppercase' }}>
+                    Pillar 04
+                  </span>
                 </div>
-                <div>
-                  <div style={{ fontSize: '22px', fontWeight: 700, color: 'var(--accent-gold)' }}>₹140</div>
-                  <div style={{ fontSize: '11px', color: 'var(--text-muted)' }}>Cost Per Verified Lead</div>
+                <h3 style={{ fontSize: '21px', color: 'var(--accent-navy)', marginBottom: '14px' }}>
+                  E-Commerce Websites
+                </h3>
+                <p style={{ fontSize: '14px', color: 'var(--text-secondary)', lineHeight: 1.7, marginBottom: '22px' }}>
+                  End-to-end online storefronts engineered for high conversions and frictionless buying journeys. Complete with seamless checkout, secure payment gateways, automated shopping feeds, and order management systems.
+                </p>
+                <div style={{ borderTop: '1px solid var(--border-color)', paddingTop: '18px', marginBottom: '20px' }}>
+                  <div style={{ fontSize: '12px', fontWeight: 700, color: 'var(--text-primary)', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '12px' }}>
+                    Key Focus Areas:
+                  </div>
+                  <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '9px', fontSize: '13px', color: 'var(--text-secondary)' }}>
+                    <li style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                      <CheckCircle2 size={15} color="var(--accent-gold)" style={{ flexShrink: 0 }} /> Custom MERN & Headless Storefront Architecture
+                    </li>
+                    <li style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                      <CheckCircle2 size={15} color="var(--accent-gold)" style={{ flexShrink: 0 }} /> Razorpay, Stripe, UPI & International Gateways
+                    </li>
+                    <li style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                      <CheckCircle2 size={15} color="var(--accent-gold)" style={{ flexShrink: 0 }} /> Product Catalog SEO & Google Shopping Feeds
+                    </li>
+                    <li style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                      <CheckCircle2 size={15} color="var(--accent-gold)" style={{ flexShrink: 0 }} /> Abandoned Cart Recovery & 1-Click Checkout
+                    </li>
+                  </ul>
                 </div>
+              </div>
+              <div style={{ background: 'var(--bg-gray)', padding: '12px 16px', borderRadius: '12px', fontSize: '12px', fontWeight: 600, color: 'var(--accent-navy)' }}>
+                Capabilities: D2C Scaling • Multi-Currency • Fast Checkout
               </div>
             </div>
 
           </div>
+
+          {/* Integrated Services Callout Banner */}
+          <div style={{ 
+            marginTop: '45px', 
+            padding: '30px 36px', 
+            borderRadius: '20px', 
+            background: 'var(--accent-navy)', 
+            color: '#ffffff',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            flexWrap: 'wrap',
+            gap: '20px'
+          }}>
+            <div style={{ maxWidth: '650px' }}>
+              <h4 style={{ fontSize: '19px', fontFamily: 'var(--font-heading)', color: '#ffffff', marginBottom: '6px' }}>
+                Need a Comprehensive Digital Strategy Across All 4 Services?
+              </h4>
+              <p style={{ fontSize: '13.5px', color: '#cbd5e1', margin: 0, lineHeight: 1.6 }}>
+                Our team synchronizes your Web Development, SEO, Digital Marketing, and E-Commerce channels into an integrated growth engine that scales customer acquisition.
+              </p>
+            </div>
+            <a 
+              href="#audit-form" 
+              className="btn-primary" 
+              style={{ background: 'var(--accent-gold)', color: 'var(--accent-navy)', whiteSpace: 'nowrap' }}
+            >
+              Get Custom Agency Proposal <ArrowRight size={16} />
+            </a>
+          </div>
+
         </div>
       </section>
 
