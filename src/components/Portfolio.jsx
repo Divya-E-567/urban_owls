@@ -82,6 +82,26 @@ const localBackupProjects = [
     liveUrl: 'https://termitecontrol.me/',
     caseStudyUrl: 'https://termitecontrol.me/',
     tags: ['Anti-Termite Treatment', 'Wood Borer Control', 'Warranty Guarantee', 'Free Inspection']
+  },
+  {
+    _id: '9',
+    title: 'Pest Control Kakkanad',
+    category: 'Service Website',
+    image: '/images/pest_control_kakkanad.jpg',
+    description: 'A hyper-localized pest control portal engineered for Kakkanad, Infopark, and Edachira. Built with instant technician booking, odorless gel baiting features, termite warranties, and local search dominance.',
+    liveUrl: 'https://pestcontrolkakkanad.com/',
+    caseStudyUrl: 'https://pestcontrolkakkanad.com/',
+    tags: ['Pest Control Kakkanad', 'Infopark & Edachira', 'Termite Treatment', 'Same-Day Service']
+  },
+  {
+    _id: '10',
+    title: 'Momhood Kerala',
+    category: 'Community Platform',
+    image: '/images/momhood_kerala.jpg',
+    description: 'A welcoming digital community portal and support network empowering mothers and women across Kerala, featuring district-wise Mom Circles, parenting resources, expert workshops, and micro-business collaboration spaces.',
+    liveUrl: 'https://momhoodkerala.org/',
+    caseStudyUrl: 'https://momhoodkerala.org/',
+    tags: ['Motherhood Community', 'Women Empowerment', 'Mom Circles', 'Kerala Network']
   }
 ];
 
@@ -107,7 +127,7 @@ const Portfolio = () => {
     fetchProjects();
   }, []);
 
-  const categories = ['All', 'Corporate Website', 'Service Website', 'Web Application'];
+  const categories = ['All', 'Corporate Website', 'Service Website', 'Web Application', 'Community Platform'];
 
   const filteredProjects = filter === 'All' 
     ? projects 
