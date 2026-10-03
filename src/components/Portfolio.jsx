@@ -5,58 +5,88 @@ import { ExternalLink, ArrowRight } from 'lucide-react';
 const localBackupProjects = [
   {
     _id: '1',
-    title: 'EcoPest',
+    title: 'Eco Pest India',
     category: 'Corporate Website',
-    image: '/images/pest_control.jpg',
-    description: 'A high-converting pest control website built for EcoPest, featuring service-led content, local trust signals, and a polished experience tailored for Kerala homeowners and businesses.',
+    image: '/images/ecopest_india.jpg',
+    description: 'A high-converting digital platform engineered for Eco Pest India Pest Management, featuring service-led booking funnels, district branch locators, local trust signals, and SEO lead capture across Kerala.',
     liveUrl: 'https://ecopestindia.com/',
     caseStudyUrl: 'https://ecopestindia.com/',
-    tags: ['Corporate Portal', 'Local Trust', 'SEO Growth', 'Lead Capture']
+    tags: ['Pest Management', 'Kerala Branches', 'SEO Growth', 'Lead Capture']
   },
   {
     _id: '2',
-    title: 'San Travels',
-    category: 'Custom Web Application',
-    image: '/images/san_travels.jpg',
-    description: 'A custom-engineered travel booking portal built to facilitate bookings, tour itineraries tracking, and interactive cab reservation integrations.',
-    liveUrl: 'https://santravels.in',
-    caseStudyUrl: 'https://santravels.in',
-    tags: ['Cab Reservations', 'Itinerary Trackers', 'Booking Engines', 'Custom API']
+    title: 'Blue Moon Waste Water Management',
+    category: 'Service Website',
+    image: '/images/bluemoon_cleaning.jpg',
+    description: 'A high-performance commercial portal for professional septic tank cleaning, water tank sanitization, and waste water management across Ernakulam and Kochi with 24/7 emergency dispatch integration.',
+    liveUrl: 'https://www.bluemooncleaningservice.com/',
+    caseStudyUrl: 'https://www.bluemooncleaningservice.com/',
+    tags: ['Septic Tank Cleaning', 'Water Tank Service', 'Ernakulam & Kochi', '24/7 Helpline']
   },
   {
     _id: '3',
-    title: 'Artivert',
-    category: 'Portfolio Website',
-    image: '/images/artivert_portfolio.jpg',
-    description: 'A high-end luxury creative portfolio and art directory displaying bespoke graphic designs and high-fidelity vector illustrations inside a fluid React layout.',
-    liveUrl: 'https://artivert.in',
-    caseStudyUrl: 'https://artivert.in',
-    tags: ['Creative Portfolio', 'Fluid Animations', 'Custom Design', 'Branding']
+    title: 'Greenline Pest Management',
+    category: 'Service Website',
+    image: '/images/greenline_pest.jpg',
+    description: 'A streamlined, mobile-first business website built for Greenline Pest Management in Palakkad. Features comprehensive pest control packages, termite inspection booking, and local search optimization.',
+    liveUrl: 'https://www.greenlinepest.in/',
+    caseStudyUrl: 'https://www.greenlinepest.in/',
+    tags: ['Pest & Termite Control', 'Palakkad Service', 'Local SEO', 'Quick Booking']
   },
   {
     _id: '4',
-    title: 'Coolwing Online',
-    category: 'E-Commerce Website',
-    image: '/images/coolwing_ecommerce.jpg',
-    description: 'A premium, fast headless e-commerce ecosystem built for modern retail. Features smart filtering, custom checkout flows, and Stripe API integration.',
-    liveUrl: 'https://coolwing.online',
-    caseStudyUrl: 'https://coolwing.online',
-    tags: ['E-Commerce Shop', 'Secure Checkout', 'Smart Filters', 'Product Displays']
+    title: 'GrassPro Kerala',
+    category: 'Web Application',
+    image: '/images/grasspro_kerala.jpg',
+    description: 'An interactive web portal and operator directory for the Kerala Grass Cutters & Landscaping Professionals Association, connecting lawn care specialists, brush cutter operators, and garden designers statewide.',
+    liveUrl: 'https://grass-cutting-five.vercel.app/',
+    caseStudyUrl: 'https://grass-cutting-five.vercel.app/',
+    tags: ['Landscaping Association', 'Operator Directory', 'District Search', 'Member Network']
   },
   {
     _id: '5',
-    title: 'Skillhub Digital',
-    category: 'Business Website',
-    image: '/images/skillhub_digital.jpg',
-    description: 'A professional digital marketing agency website designed to capture high-value leads, display client portfolios, and rank at the top of local SEO searches.',
-    liveUrl: 'https://skillhubdigital.in',
-    caseStudyUrl: 'https://skillhubdigital.in',
-    tags: ['Business Site', 'Local Search Rank', 'Maps Placement', 'Lead Ingestion']
+    title: 'Cleaning Service Kochi',
+    category: 'Service Website',
+    image: '/images/cleaning_kochi.jpg',
+    description: 'A modern, high-conversion deep cleaning and sanitization booking website tailored for apartments, villas, and commercial spaces in Kochi and Ernakulam with instant quote calculators and WhatsApp lead capture.',
+    liveUrl: 'https://cleaningservicekochi.com/',
+    caseStudyUrl: 'https://cleaningservicekochi.com/',
+    tags: ['Deep Cleaning', 'Sanitization', 'Kochi & Ernakulam', 'Instant Quote']
+  },
+  {
+    _id: '6',
+    title: 'BioGrowers India',
+    category: 'Corporate Website',
+    image: '/images/biogrowers.jpg',
+    description: 'A sustainable organic bio-agriculture and green technology platform showcasing organic farm inputs, soil enhancers, high-yield biological nutrients, and eco-friendly farming solutions for Indian growers.',
+    liveUrl: 'https://www.biogrowers.in/',
+    caseStudyUrl: 'https://www.biogrowers.in/',
+    tags: ['Organic Bio-Farming', 'Sustainable Agritech', 'Crop Health', 'Green Solutions']
+  },
+  {
+    _id: '7',
+    title: 'BOC Connect',
+    category: 'Web Application',
+    image: '/images/bocconnect.jpg',
+    description: 'An enterprise business networking and connectivity platform designed to facilitate secure B2B collaborations, professional partner discovery, and streamlined operational communications.',
+    liveUrl: 'https://bocconnect.in/',
+    caseStudyUrl: 'https://bocconnect.in/',
+    tags: ['Business Networking', 'Enterprise Portal', 'B2B Connectivity', 'Secure Platform']
+  },
+  {
+    _id: '8',
+    title: 'TermiteControl Kerala',
+    category: 'Service Website',
+    image: '/images/termite_control.jpg',
+    description: 'A hyper-targeted anti-termite treatment and wood borer eradication portal in Kerala, engineered with pre-construction & post-construction termite warranty guides, free inspection schedulers, and regional technical SEO.',
+    liveUrl: 'https://termitecontrol.me/',
+    caseStudyUrl: 'https://termitecontrol.me/',
+    tags: ['Anti-Termite Treatment', 'Wood Borer Control', 'Warranty Guarantee', 'Free Inspection']
   }
 ];
 
 const Portfolio = () => {
-  const [projects, setProjects] = useState([]);
+  const [projects, setProjects] = useState(localBackupProjects);
   const [filter, setFilter] = useState('All');
 
   useEffect(() => {
@@ -77,7 +107,7 @@ const Portfolio = () => {
     fetchProjects();
   }, []);
 
-  const categories = ['All', 'E-Commerce Website', 'Corporate Website', 'Custom Web Application', 'Portfolio Website', 'Business Website'];
+  const categories = ['All', 'Corporate Website', 'Service Website', 'Web Application'];
 
   const filteredProjects = filter === 'All' 
     ? projects 
