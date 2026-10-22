@@ -1092,7 +1092,7 @@ const GoogleAdsAgencyKochi = () => {
                       name="phone"
                       value={formData.phone}
                       onChange={handleInputChange}
-                      placeholder="+91 98470 40009"
+                      placeholder="Enter your phone number"
                       className="luxury-input"
                     />
                   </div>

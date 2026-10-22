@@ -431,7 +431,7 @@ const Hero = () => {
                       </div>
                       <input 
                         type="tel" 
-                        placeholder="Phone Number" 
+                        placeholder="Enter your phone number" 
                         required 
                         value={phone}
                         onChange={(e) => setPhone(e.target.value)}

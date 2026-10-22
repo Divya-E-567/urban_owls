@@ -687,7 +687,7 @@ const SeoExpertKochi = () => {
                   <input 
                     type="tel" 
                     required 
-                    placeholder="+91 98470 XXXXX" 
+                    placeholder="Enter your phone number" 
                     value={formData.phone}
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                     style={{ width: '100%', padding: '14px 16px', borderRadius: '12px', border: '1px solid var(--border-color)', background: '#ffffff', fontSize: '14px' }}
