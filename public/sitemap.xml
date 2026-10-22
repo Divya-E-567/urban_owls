@@ -98,4 +98,11 @@
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
+  <!-- SEO Expert Kochi Page -->
+  <url>
+    <loc>https://urbanowls.co/seo-expert-kochi</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.98</priority>
+  </url>
 </urlset>

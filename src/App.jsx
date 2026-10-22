@@ -21,6 +21,7 @@ import BestDigitalMarketingKochi from './pages/BestDigitalMarketingKochi';
 import BestDigitalMarketingAgencyKochi from './pages/BestDigitalMarketingAgencyKochi';
 import GoogleAdsAgencyKochi from './pages/GoogleAdsAgencyKochi';
 import SocialMediaMarketingKochi from './pages/SocialMediaMarketingKochi';
+import SeoExpertKochi from './pages/SeoExpertKochi';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -52,6 +53,7 @@ function App() {
               <Route path="/best-digital-marketing-agency-kochi" element={<BestDigitalMarketingAgencyKochi />} />
               <Route path="/google-ads-agency-kochi" element={<GoogleAdsAgencyKochi />} />
               <Route path="/social-media-marketing-kochi" element={<SocialMediaMarketingKochi />} />
+              <Route path="/seo-expert-kochi" element={<SeoExpertKochi />} />
             </Routes>
           </main>
 
