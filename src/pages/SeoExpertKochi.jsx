@@ -217,46 +217,46 @@ const SeoExpertKochi = () => {
     <article style={{ paddingTop: '80px', overflowX: 'hidden' }}>
       
       {/* 1. HERO SECTION: Senior Technical SEO Consultant Positioning */}
-      <section style={{ background: 'var(--bg-cream)', position: 'relative', borderBottom: '1px solid var(--border-color)', padding: '95px 0 85px 0' }}>
-        <div style={{ position: 'absolute', top: 0, right: '8%', width: '550px', height: '550px', borderRadius: '50%', background: 'radial-gradient(circle, rgba(197, 163, 92, 0.08) 0%, transparent 70%)', pointerEvents: 'none' }} />
+      <section style={{ background: 'var(--bg-cream)', position: 'relative', borderBottom: '1px solid var(--border-color)', padding: 'clamp(50px, 8vw, 95px) 0 clamp(40px, 7vw, 85px) 0', overflow: 'hidden' }}>
+        <div style={{ position: 'absolute', top: 0, right: '8%', width: '550px', height: '550px', borderRadius: '50%', background: 'radial-gradient(circle, rgba(197, 163, 92, 0.08) 0%, transparent 70%)', pointerEvents: 'none', maxWidth: '100%' }} />
         
         <div className="container" style={{ position: 'relative', zIndex: 2 }}>
-          <div style={{ display: 'grid', gridTemplateColumns: '1.25fr 0.75fr', gap: '50px', alignItems: 'center' }} className="hero-agency-grid">
+          <div className="hero-agency-grid">
             
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
-              <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '6px 16px', borderRadius: '30px', background: 'rgba(8, 17, 37, 0.05)', border: '1px solid rgba(8, 17, 37, 0.08)', marginBottom: '22px' }}>
-                <Sparkles size={14} color="var(--accent-gold)" />
-                <span style={{ fontSize: '11.5px', fontFamily: "var(--font-heading)", fontWeight: 700, letterSpacing: '0.1em', color: 'var(--accent-gold)', textTransform: 'uppercase' }}>
+              <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '6px 14px', borderRadius: '30px', background: 'rgba(8, 17, 37, 0.05)', border: '1px solid rgba(8, 17, 37, 0.08)', marginBottom: '20px', maxWidth: '100%', flexWrap: 'wrap' }}>
+                <Sparkles size={14} color="var(--accent-gold)" style={{ flexShrink: 0 }} />
+                <span style={{ fontSize: '11px', fontFamily: "var(--font-heading)", fontWeight: 700, letterSpacing: '0.08em', color: 'var(--accent-gold)', textTransform: 'uppercase' }}>
                   Independent Technical SEO Consultant • Kochi, Kerala
                 </span>
               </div>
 
-              <h1 style={{ color: 'var(--text-primary)', marginBottom: '22px', fontWeight: 700, letterSpacing: '-0.03em', fontSize: 'clamp(34px, 5vw, 56px)', lineHeight: 1.12 }}>
+              <h1 style={{ color: 'var(--text-primary)', marginBottom: '20px', fontWeight: 700, letterSpacing: '-0.03em', fontSize: 'clamp(30px, 5.5vw, 56px)', lineHeight: 1.15 }}>
                 SEO Expert in Kochi Engineering Predictable Organic Search Revenue
               </h1>
 
-              <p style={{ color: 'var(--text-secondary)', fontSize: '16.5px', lineHeight: 1.8, fontWeight: 300, marginBottom: '32px', maxWidth: '650px' }}>
+              <p style={{ color: 'var(--text-secondary)', fontSize: 'clamp(15px, 2vw, 16.5px)', lineHeight: 1.75, fontWeight: 300, marginBottom: '28px', maxWidth: '650px' }}>
                 Search engines do not reward surface-level marketing tricks. As a senior technical SEO consultant based in Kochi, I diagnose raw server logs, optimize JavaScript rendering pipelines, sculpt internal PageRank equity, and construct entity knowledge graphs that secure enduring top-tier rankings on Google, Google Maps, and Generative AI engines.
               </p>
 
               {/* Verified Value Metrics */}
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '16px', marginBottom: '36px' }} className="hero-metrics">
-                <div style={{ padding: '16px', background: '#ffffff', borderRadius: '14px', border: '1px solid var(--border-color)', boxShadow: '0 4px 15px rgba(0,0,0,0.02)' }}>
-                  <div style={{ fontFamily: "var(--font-heading)", fontSize: '26px', fontWeight: 700, color: 'var(--accent-navy)' }}>&lt; 0.6s</div>
-                  <div style={{ fontSize: '12px', color: 'var(--text-secondary)', fontWeight: 500 }}>Target Core Web Vitals (LCP)</div>
+              <div className="hero-metrics">
+                <div className="metric-box">
+                  <div className="metric-num">&lt; 0.6s</div>
+                  <div className="metric-lbl">Target Core Web Vitals (LCP)</div>
                 </div>
-                <div style={{ padding: '16px', background: '#ffffff', borderRadius: '14px', border: '1px solid var(--border-color)', boxShadow: '0 4px 15px rgba(0,0,0,0.02)' }}>
-                  <div style={{ fontFamily: "var(--font-heading)", fontSize: '26px', fontWeight: 700, color: 'var(--accent-gold)' }}>Top 3</div>
-                  <div style={{ fontSize: '12px', color: 'var(--text-secondary)', fontWeight: 500 }}>Local 3-Pack Proximity</div>
+                <div className="metric-box">
+                  <div className="metric-num text-gold">Top 3</div>
+                  <div className="metric-lbl">Local 3-Pack Proximity</div>
                 </div>
-                <div style={{ padding: '16px', background: '#ffffff', borderRadius: '14px', border: '1px solid var(--border-color)', boxShadow: '0 4px 15px rgba(0,0,0,0.02)' }}>
-                  <div style={{ fontFamily: "var(--font-heading)", fontSize: '26px', fontWeight: 700, color: 'var(--accent-navy)' }}>100%</div>
-                  <div style={{ fontSize: '12px', color: 'var(--text-secondary)', fontWeight: 500 }}>White-Hat Engineering</div>
+                <div className="metric-box">
+                  <div className="metric-num">100%</div>
+                  <div className="metric-lbl">White-Hat Engineering</div>
                 </div>
               </div>
 
               {/* Action Buttons */}
-              <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', alignItems: 'center' }}>
+              <div className="hero-action-btns">
                 <a href="#audit-form" className="btn-primary" style={{ padding: '14px 28px' }}>
                   Claim Your Technical SEO Audit <ArrowRight size={16} />
                 </a>
@@ -273,7 +273,7 @@ const SeoExpertKochi = () => {
             </motion.div>
 
             {/* Direct Consultant Consultation Card */}
-            <motion.div initial={{ opacity: 0, scale: 0.96 }} animate={{ opacity: 1, scale: 1 }} transition={{ delay: 0.2, duration: 0.7 }} style={{ background: '#ffffff', border: '1px solid var(--border-color)', borderRadius: '24px', padding: '36px', boxShadow: 'var(--shadow-premium)' }}>
+            <motion.div initial={{ opacity: 0, scale: 0.96 }} animate={{ opacity: 1, scale: 1 }} transition={{ delay: 0.2, duration: 0.7 }} className="consultant-diagnostic-card" style={{ background: '#ffffff', border: '1px solid var(--border-color)', borderRadius: '24px', boxShadow: 'var(--shadow-premium)' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '14px' }}>
                 <div style={{ width: '10px', height: '10px', borderRadius: '50%', background: '#10B981' }} />
                 <span style={{ fontSize: '12px', fontFamily: "var(--font-heading)", fontWeight: 700, letterSpacing: '0.06em', color: 'var(--text-primary)', textTransform: 'uppercase' }}>
@@ -313,9 +313,9 @@ const SeoExpertKochi = () => {
             </p>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '28px' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))', gap: '24px' }}>
             
-            <div style={{ padding: '34px', borderRadius: '20px', border: '1px solid var(--border-color)', background: 'var(--bg-cream)' }}>
+            <div style={{ padding: 'clamp(22px, 3.5vw, 34px)', borderRadius: '20px', border: '1px solid var(--border-color)', background: 'var(--bg-cream)' }}>
               <div style={{ width: '48px', height: '48px', borderRadius: '12px', background: '#ffffff', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--accent-navy)', marginBottom: '18px' }}>
                 <Code size={22} />
               </div>
@@ -325,7 +325,7 @@ const SeoExpertKochi = () => {
               </p>
             </div>
 
-            <div style={{ padding: '34px', borderRadius: '20px', border: '1px solid var(--border-color)', background: 'var(--bg-cream)' }}>
+            <div style={{ padding: 'clamp(22px, 3.5vw, 34px)', borderRadius: '20px', border: '1px solid var(--border-color)', background: 'var(--bg-cream)' }}>
               <div style={{ width: '48px', height: '48px', borderRadius: '12px', background: '#ffffff', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--accent-gold)', marginBottom: '18px' }}>
                 <Layers size={22} />
               </div>
@@ -335,7 +335,7 @@ const SeoExpertKochi = () => {
               </p>
             </div>
 
-            <div style={{ padding: '34px', borderRadius: '20px', border: '1px solid var(--border-color)', background: 'var(--bg-cream)' }}>
+            <div style={{ padding: 'clamp(22px, 3.5vw, 34px)', borderRadius: '20px', border: '1px solid var(--border-color)', background: 'var(--bg-cream)' }}>
               <div style={{ width: '48px', height: '48px', borderRadius: '12px', background: '#ffffff', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--accent-navy)', marginBottom: '18px' }}>
                 <ShieldCheck size={22} />
               </div>
@@ -360,9 +360,9 @@ const SeoExpertKochi = () => {
             </p>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '26px' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))', gap: '24px' }}>
             
-            <div style={{ background: '#ffffff', border: '1px solid var(--border-color)', borderRadius: '20px', padding: '32px', boxShadow: 'var(--shadow-premium)' }}>
+            <div style={{ background: '#ffffff', border: '1px solid var(--border-color)', borderRadius: '20px', padding: 'clamp(22px, 3.5vw, 32px)', boxShadow: 'var(--shadow-premium)' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '12px' }}>
                 <Terminal size={18} color="var(--accent-gold)" />
                 <span style={{ fontSize: '11px', fontFamily: 'var(--font-heading)', fontWeight: 700, color: 'var(--accent-gold)', textTransform: 'uppercase' }}>PILLAR 01</span>
@@ -378,7 +378,7 @@ const SeoExpertKochi = () => {
               </ul>
             </div>
 
-            <div style={{ background: '#ffffff', border: '1px solid var(--border-color)', borderRadius: '20px', padding: '32px', boxShadow: 'var(--shadow-premium)' }}>
+            <div style={{ background: '#ffffff', border: '1px solid var(--border-color)', borderRadius: '20px', padding: 'clamp(22px, 3.5vw, 32px)', boxShadow: 'var(--shadow-premium)' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '12px' }}>
                 <Zap size={18} color="var(--accent-gold)" />
                 <span style={{ fontSize: '11px', fontFamily: 'var(--font-heading)', fontWeight: 700, color: 'var(--accent-gold)', textTransform: 'uppercase' }}>PILLAR 02</span>
@@ -394,7 +394,7 @@ const SeoExpertKochi = () => {
               </ul>
             </div>
 
-            <div style={{ background: '#ffffff', border: '1px solid var(--border-color)', borderRadius: '20px', padding: '32px', boxShadow: 'var(--shadow-premium)' }}>
+            <div style={{ background: '#ffffff', border: '1px solid var(--border-color)', borderRadius: '20px', padding: 'clamp(22px, 3.5vw, 32px)', boxShadow: 'var(--shadow-premium)' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '12px' }}>
                 <MapPin size={18} color="var(--accent-gold)" />
                 <span style={{ fontSize: '11px', fontFamily: 'var(--font-heading)', fontWeight: 700, color: 'var(--accent-gold)', textTransform: 'uppercase' }}>PILLAR 03</span>
@@ -410,7 +410,7 @@ const SeoExpertKochi = () => {
               </ul>
             </div>
 
-            <div style={{ background: '#ffffff', border: '1px solid var(--border-color)', borderRadius: '20px', padding: '32px', boxShadow: 'var(--shadow-premium)' }}>
+            <div style={{ background: '#ffffff', border: '1px solid var(--border-color)', borderRadius: '20px', padding: 'clamp(22px, 3.5vw, 32px)', boxShadow: 'var(--shadow-premium)' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '12px' }}>
                 <Layers size={18} color="var(--accent-gold)" />
                 <span style={{ fontSize: '11px', fontFamily: 'var(--font-heading)', fontWeight: 700, color: 'var(--accent-gold)', textTransform: 'uppercase' }}>PILLAR 04</span>
@@ -426,7 +426,7 @@ const SeoExpertKochi = () => {
               </ul>
             </div>
 
-            <div style={{ background: '#ffffff', border: '1px solid var(--border-color)', borderRadius: '20px', padding: '32px', boxShadow: 'var(--shadow-premium)' }}>
+            <div style={{ background: '#ffffff', border: '1px solid var(--border-color)', borderRadius: '20px', padding: 'clamp(22px, 3.5vw, 32px)', boxShadow: 'var(--shadow-premium)' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '12px' }}>
                 <Cpu size={18} color="var(--accent-gold)" />
                 <span style={{ fontSize: '11px', fontFamily: 'var(--font-heading)', fontWeight: 700, color: 'var(--accent-gold)', textTransform: 'uppercase' }}>PILLAR 05</span>
@@ -442,7 +442,7 @@ const SeoExpertKochi = () => {
               </ul>
             </div>
 
-            <div style={{ background: '#ffffff', border: '1px solid var(--border-color)', borderRadius: '20px', padding: '32px', boxShadow: 'var(--shadow-premium)' }}>
+            <div style={{ background: '#ffffff', border: '1px solid var(--border-color)', borderRadius: '20px', padding: 'clamp(22px, 3.5vw, 32px)', boxShadow: 'var(--shadow-premium)' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '12px' }}>
                 <Globe size={18} color="var(--accent-gold)" />
                 <span style={{ fontSize: '11px', fontFamily: 'var(--font-heading)', fontWeight: 700, color: 'var(--accent-gold)', textTransform: 'uppercase' }}>PILLAR 06</span>
@@ -473,9 +473,9 @@ const SeoExpertKochi = () => {
             </p>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '24px' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 260px), 1fr))', gap: '22px' }}>
             
-            <div style={{ padding: '30px', borderRadius: '18px', border: '1px solid var(--border-color)', background: 'var(--bg-gray)' }}>
+            <div style={{ padding: 'clamp(20px, 3.5vw, 30px)', borderRadius: '18px', border: '1px solid var(--border-color)', background: 'var(--bg-gray)' }}>
               <div style={{ fontSize: '11px', fontFamily: 'var(--font-heading)', fontWeight: 700, color: 'var(--accent-gold)', marginBottom: '8px' }}>CASE STUDY 01 • E-COMMERCE</div>
               <h3 style={{ fontSize: '18px', color: 'var(--accent-navy)', marginBottom: '10px' }}>Faceted Crawl Trap Remediation</h3>
               <p style={{ fontSize: '13px', color: 'var(--text-secondary)', lineHeight: 1.6, marginBottom: '16px' }}>
@@ -486,7 +486,7 @@ const SeoExpertKochi = () => {
               </div>
             </div>
 
-            <div style={{ padding: '30px', borderRadius: '18px', border: '1px solid var(--border-color)', background: 'var(--bg-gray)' }}>
+            <div style={{ padding: 'clamp(20px, 3.5vw, 30px)', borderRadius: '18px', border: '1px solid var(--border-color)', background: 'var(--bg-gray)' }}>
               <div style={{ fontSize: '11px', fontFamily: 'var(--font-heading)', fontWeight: 700, color: 'var(--accent-gold)', marginBottom: '8px' }}>CASE STUDY 02 • REACT / SPA</div>
               <h3 style={{ fontSize: '18px', color: 'var(--accent-navy)', marginBottom: '10px' }}>Client-Side Rendering Recovery</h3>
               <p style={{ fontSize: '13px', color: 'var(--text-secondary)', lineHeight: 1.6, marginBottom: '16px' }}>
@@ -497,7 +497,7 @@ const SeoExpertKochi = () => {
               </div>
             </div>
 
-            <div style={{ padding: '30px', borderRadius: '18px', border: '1px solid var(--border-color)', background: 'var(--bg-gray)' }}>
+            <div style={{ padding: 'clamp(20px, 3.5vw, 30px)', borderRadius: '18px', border: '1px solid var(--border-color)', background: 'var(--bg-gray)' }}>
               <div style={{ fontSize: '11px', fontFamily: 'var(--font-heading)', fontWeight: 700, color: 'var(--accent-gold)', marginBottom: '8px' }}>CASE STUDY 03 • MULTI-BRANCH SERVICE</div>
               <h3 style={{ fontSize: '18px', color: 'var(--accent-navy)', marginBottom: '10px' }}>Kerala Local 3-Pack Dominance</h3>
               <p style={{ fontSize: '13px', color: 'var(--text-secondary)', lineHeight: 1.6, marginBottom: '16px' }}>
@@ -508,7 +508,7 @@ const SeoExpertKochi = () => {
               </div>
             </div>
 
-            <div style={{ padding: '30px', borderRadius: '18px', border: '1px solid var(--border-color)', background: 'var(--bg-gray)' }}>
+            <div style={{ padding: 'clamp(20px, 3.5vw, 30px)', borderRadius: '18px', border: '1px solid var(--border-color)', background: 'var(--bg-gray)' }}>
               <div style={{ fontSize: '11px', fontFamily: 'var(--font-heading)', fontWeight: 700, color: 'var(--accent-gold)', marginBottom: '8px' }}>CASE STUDY 04 • ALGORITHM RECOVERY</div>
               <h3 style={{ fontSize: '18px', color: 'var(--accent-navy)', marginBottom: '10px' }}>Helpful Content Penalty Reversal</h3>
               <p style={{ fontSize: '13px', color: 'var(--text-secondary)', lineHeight: 1.6, marginBottom: '16px' }}>
@@ -526,7 +526,7 @@ const SeoExpertKochi = () => {
       {/* 5. KOCHI COMMERCIAL SEARCH DYNAMICS & GCC NRI CORRIDORS */}
       <section style={{ background: 'var(--bg-cream)', borderBottom: '1px solid var(--border-color)' }} className="section-padding">
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: '1.15fr 0.85fr', gap: '50px', alignItems: 'center' }} className="regional-grid">
+          <div className="regional-grid">
             
             <div>
               <span className="subtitle">Micro-Market Search Intelligence</span>
@@ -538,7 +538,7 @@ const SeoExpertKochi = () => {
                 Our localized algorithmic models map search queries directly to specific commercial centroids across Kochi, while simultaneously capturing high-value Middle East NRI search corridors where major investment decisions are made.
               </p>
 
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px' }}>
+              <div className="regional-sub-grid">
                 <div style={{ display: 'flex', alignItems: 'flex-start', gap: '10px' }}>
                   <MapPin size={18} color="var(--accent-gold)" style={{ flexShrink: 0, marginTop: '3px' }} />
                   <div>
@@ -570,7 +570,7 @@ const SeoExpertKochi = () => {
               </div>
             </div>
 
-            <div style={{ background: '#ffffff', borderRadius: '24px', padding: '36px', border: '1px solid var(--border-color)', boxShadow: 'var(--shadow-premium)' }}>
+            <div className="regional-card">
               <h3 style={{ fontSize: '20px', fontFamily: "var(--font-heading)", color: 'var(--text-primary)', marginBottom: '20px' }}>
                 Algorithmic Search Dimensions We Target
               </h3>
@@ -607,40 +607,43 @@ const SeoExpertKochi = () => {
             <h2>How a Technical SEO Consultant Outperforms a Traditional Agency</h2>
           </div>
 
-          <div style={{ overflowX: 'auto', borderRadius: '18px', border: '1px solid var(--border-color)', boxShadow: 'var(--shadow-premium)' }}>
-            <table style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left', minWidth: '600px' }}>
+          <div className="table-responsive-wrapper">
+            <div className="table-scroll-hint">
+              <span>⇄ Swipe horizontally to see full technical comparison</span>
+            </div>
+            <table className="seo-comparison-table">
               <thead>
                 <tr style={{ background: 'var(--accent-navy)', color: '#ffffff' }}>
-                  <th style={{ padding: '18px 20px', fontSize: '14px', fontFamily: "var(--font-heading)" }}>Technical Capability</th>
-                  <th style={{ padding: '18px 20px', fontSize: '14px', fontFamily: "var(--font-heading)", color: 'var(--accent-gold)' }}>Urban Owls SEO Consultant</th>
-                  <th style={{ padding: '18px 20px', fontSize: '14px', fontFamily: "var(--font-heading)", color: '#cbd5e1' }}>Standard Kochi Agency</th>
+                  <th>Technical Capability</th>
+                  <th style={{ color: 'var(--accent-gold)' }}>Urban Owls SEO Consultant</th>
+                  <th style={{ color: '#cbd5e1' }}>Standard Kochi Agency</th>
                 </tr>
               </thead>
-              <tbody style={{ fontSize: '14px', color: 'var(--text-primary)' }}>
+              <tbody style={{ color: 'var(--text-primary)' }}>
                 <tr style={{ borderBottom: '1px solid var(--border-color)', background: 'rgba(8, 17, 37, 0.01)' }}>
-                  <td style={{ padding: '16px 20px', fontWeight: 600 }}>Crawl & Code Troubleshooting</td>
-                  <td style={{ padding: '16px 20px', color: 'var(--accent-navy)', fontWeight: 600 }}>Hands-on code execution in React, Next.js, and server configs</td>
-                  <td style={{ padding: '16px 20px', color: 'var(--text-muted)' }}>Non-technical staff relying entirely on generic WordPress plugins</td>
+                  <td style={{ fontWeight: 600 }}>Crawl & Code Troubleshooting</td>
+                  <td style={{ color: 'var(--accent-navy)', fontWeight: 600 }}>Hands-on code execution in React, Next.js, and server configs</td>
+                  <td style={{ color: 'var(--text-muted)' }}>Non-technical staff relying entirely on generic WordPress plugins</td>
                 </tr>
                 <tr style={{ borderBottom: '1px solid var(--border-color)', background: '#ffffff' }}>
-                  <td style={{ padding: '16px 20px', fontWeight: 600 }}>Speed Standards (Core Web Vitals)</td>
-                  <td style={{ padding: '16px 20px', color: 'var(--accent-navy)', fontWeight: 600 }}>Guaranteed sub-0.6s LCP & sub-100ms INP metrics</td>
-                  <td style={{ padding: '16px 20px', color: 'var(--text-muted)' }}>Heavy templates with 3s+ load times that trigger Google penalties</td>
+                  <td style={{ fontWeight: 600 }}>Speed Standards (Core Web Vitals)</td>
+                  <td style={{ color: 'var(--accent-navy)', fontWeight: 600 }}>Guaranteed sub-0.6s LCP & sub-100ms INP metrics</td>
+                  <td style={{ color: 'var(--text-muted)' }}>Heavy templates with 3s+ load times that trigger Google penalties</td>
                 </tr>
                 <tr style={{ borderBottom: '1px solid var(--border-color)', background: 'rgba(8, 17, 37, 0.01)' }}>
-                  <td style={{ padding: '16px 20px', fontWeight: 600 }}>Generative Engine Optimization (GEO)</td>
-                  <td style={{ padding: '16px 20px', color: 'var(--accent-navy)', fontWeight: 600 }}>Structured entity graphs for ChatGPT, Gemini & Perplexity</td>
-                  <td style={{ padding: '16px 20px', color: 'var(--text-muted)' }}>Completely overlooked; limited to old meta tags</td>
+                  <td style={{ fontWeight: 600 }}>Generative Engine Optimization (GEO)</td>
+                  <td style={{ color: 'var(--accent-navy)', fontWeight: 600 }}>Structured entity graphs for ChatGPT, Gemini & Perplexity</td>
+                  <td style={{ color: 'var(--text-muted)' }}>Completely overlooked; limited to old meta tags</td>
                 </tr>
                 <tr style={{ borderBottom: '1px solid var(--border-color)', background: '#ffffff' }}>
-                  <td style={{ padding: '16px 20px', fontWeight: 600 }}>Link Equity Acquisition</td>
-                  <td style={{ padding: '16px 20px', color: 'var(--accent-navy)', fontWeight: 600 }}>High-authority Kerala business PR & contextual editorial features</td>
-                  <td style={{ padding: '16px 20px', color: 'var(--text-muted)' }}>Spam directory submissions and risky private blog networks (PBNs)</td>
+                  <td style={{ fontWeight: 600 }}>Link Equity Acquisition</td>
+                  <td style={{ color: 'var(--accent-navy)', fontWeight: 600 }}>High-authority Kerala business PR & contextual editorial features</td>
+                  <td style={{ color: 'var(--text-muted)' }}>Spam directory submissions and risky private blog networks (PBNs)</td>
                 </tr>
                 <tr style={{ background: 'rgba(8, 17, 37, 0.01)' }}>
-                  <td style={{ padding: '16px 20px', fontWeight: 600 }}>Account Governance & Reporting</td>
-                  <td style={{ padding: '16px 20px', color: 'var(--accent-navy)', fontWeight: 600 }}>Direct senior consultant access with live Looker Studio dashboards</td>
-                  <td style={{ padding: '16px 20px', color: 'var(--text-muted)' }}>Junior account managers sending static monthly PDF snapshots</td>
+                  <td style={{ fontWeight: 600 }}>Account Governance & Reporting</td>
+                  <td style={{ color: 'var(--accent-navy)', fontWeight: 600 }}>Direct senior consultant access with live Looker Studio dashboards</td>
+                  <td style={{ color: 'var(--text-muted)' }}>Junior account managers sending static monthly PDF snapshots</td>
                 </tr>
               </tbody>
             </table>
@@ -659,9 +662,9 @@ const SeoExpertKochi = () => {
             </p>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '26px' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 260px), 1fr))', gap: '22px' }}>
             
-            <div style={{ background: '#ffffff', borderRadius: '20px', padding: '32px', border: '1px solid var(--border-color)', boxShadow: 'var(--shadow-premium)' }}>
+            <div style={{ background: '#ffffff', borderRadius: '20px', padding: 'clamp(20px, 3.5vw, 32px)', border: '1px solid var(--border-color)', boxShadow: 'var(--shadow-premium)' }}>
               <div style={{ width: '42px', height: '42px', borderRadius: '10px', background: 'var(--accent-navy)', color: '#ffffff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 700, fontFamily: 'var(--font-heading)', marginBottom: '18px' }}>01</div>
               <h3 style={{ fontSize: '19px', color: 'var(--accent-navy)', marginBottom: '10px' }}>Days 1–30: Forensic Diagnostic</h3>
               <p style={{ fontSize: '13.5px', color: 'var(--text-secondary)', lineHeight: 1.7, margin: 0 }}>
@@ -669,7 +672,7 @@ const SeoExpertKochi = () => {
               </p>
             </div>
 
-            <div style={{ background: '#ffffff', borderRadius: '20px', padding: '32px', border: '1px solid var(--border-color)', boxShadow: 'var(--shadow-premium)' }}>
+            <div style={{ background: '#ffffff', borderRadius: '20px', padding: 'clamp(20px, 3.5vw, 32px)', border: '1px solid var(--border-color)', boxShadow: 'var(--shadow-premium)' }}>
               <div style={{ width: '42px', height: '42px', borderRadius: '10px', background: 'var(--accent-gold)', color: '#081125', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 700, fontFamily: 'var(--font-heading)', marginBottom: '18px' }}>02</div>
               <h3 style={{ fontSize: '19px', color: 'var(--accent-navy)', marginBottom: '10px' }}>Days 31–60: Topical Authority</h3>
               <p style={{ fontSize: '13.5px', color: 'var(--text-secondary)', lineHeight: 1.7, margin: 0 }}>
@@ -677,7 +680,7 @@ const SeoExpertKochi = () => {
               </p>
             </div>
 
-            <div style={{ background: '#ffffff', borderRadius: '20px', padding: '32px', border: '1px solid var(--border-color)', boxShadow: 'var(--shadow-premium)' }}>
+            <div style={{ background: '#ffffff', borderRadius: '20px', padding: 'clamp(20px, 3.5vw, 32px)', border: '1px solid var(--border-color)', boxShadow: 'var(--shadow-premium)' }}>
               <div style={{ width: '42px', height: '42px', borderRadius: '10px', background: 'var(--accent-navy)', color: '#ffffff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 700, fontFamily: 'var(--font-heading)', marginBottom: '18px' }}>03</div>
               <h3 style={{ fontSize: '19px', color: 'var(--accent-navy)', marginBottom: '10px' }}>Days 61–90: Local & AI Scale</h3>
               <p style={{ fontSize: '13.5px', color: 'var(--text-secondary)', lineHeight: 1.7, margin: 0 }}>
@@ -707,9 +710,9 @@ const SeoExpertKochi = () => {
                 <div key={index} style={{ background: 'var(--bg-cream)', border: '1px solid var(--border-color)', borderRadius: '16px', overflow: 'hidden' }}>
                   <button 
                     onClick={() => setActiveFaq(isOpen ? null : index)}
-                    style={{ width: '100%', padding: '20px 24px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', textAlign: 'left', background: isOpen ? '#ffffff' : 'transparent', borderBottom: isOpen ? '1px solid var(--border-color)' : 'none', cursor: 'pointer' }}
+                    style={{ width: '100%', padding: 'clamp(16px, 3vw, 20px) clamp(16px, 3.5vw, 24px)', display: 'flex', alignItems: 'center', justifyContent: 'space-between', textAlign: 'left', background: isOpen ? '#ffffff' : 'transparent', borderBottom: isOpen ? '1px solid var(--border-color)' : 'none', cursor: 'pointer' }}
                   >
-                    <span style={{ fontFamily: "var(--font-heading)", fontSize: '16px', fontWeight: 600, color: 'var(--text-primary)', paddingRight: '16px' }}>
+                    <span style={{ fontFamily: "var(--font-heading)", fontSize: 'clamp(15px, 2.5vw, 16px)', fontWeight: 600, color: 'var(--text-primary)', paddingRight: '14px' }}>
                       {faq.q}
                     </span>
                     <div style={{ color: 'var(--accent-gold)', flexShrink: 0 }}>
@@ -720,7 +723,7 @@ const SeoExpertKochi = () => {
                   <AnimatePresence>
                     {isOpen && (
                       <motion.div initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: 'auto' }} exit={{ opacity: 0, height: 0 }} transition={{ duration: 0.3 }}>
-                        <div style={{ padding: '22px 24px', fontSize: '14.5px', lineHeight: 1.8, color: 'var(--text-secondary)', background: '#ffffff' }}>
+                        <div style={{ padding: 'clamp(16px, 3vw, 22px) clamp(16px, 3.5vw, 24px)', fontSize: '14px', lineHeight: 1.75, color: 'var(--text-secondary)', background: '#ffffff' }}>
                           {faq.a}
                         </div>
                       </motion.div>
@@ -734,13 +737,13 @@ const SeoExpertKochi = () => {
       </section>
 
       {/* 9. FORENSIC AUDIT & CONSULTATION REQUEST FORM */}
-      <section style={{ background: 'var(--bg-cream)', padding: '95px 0' }} id="audit-form">
+      <section style={{ background: 'var(--bg-cream)', padding: 'clamp(50px, 8vw, 95px) 0' }} id="audit-form">
         <div className="container" style={{ maxWidth: '850px' }}>
-          <div style={{ background: '#ffffff', borderRadius: '24px', padding: '45px', border: '1px solid var(--border-color)', boxShadow: 'var(--shadow-premium)' }}>
+          <div className="audit-card">
             
             <div style={{ textAlign: 'center', marginBottom: '32px' }}>
               <span className="subtitle">Complimentary Search Review</span>
-              <h2 style={{ fontSize: '28px', marginBottom: '10px' }}>Request Your 360° Technical SEO Audit</h2>
+              <h2 style={{ fontSize: 'clamp(24px, 4vw, 32px)', marginBottom: '10px' }}>Request Your 360° Technical SEO Audit</h2>
               <p style={{ color: 'var(--text-secondary)', fontSize: '15px', margin: 0 }}>
                 Our senior SEO consultant will inspect your live Search Console metrics, server crawl logs, and local Ernakulam ranking gaps. No automated software fluff.
               </p>
@@ -755,7 +758,7 @@ const SeoExpertKochi = () => {
                 </p>
               </div>
             ) : (
-              <form onSubmit={handleFormSubmit} style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px' }}>
+              <form onSubmit={handleFormSubmit} className="audit-form-grid">
                 
                 <div>
                   <label style={{ display: 'block', fontSize: '13px', fontWeight: 600, color: 'var(--text-primary)', marginBottom: '8px' }}>Your Name *</label>
@@ -765,7 +768,7 @@ const SeoExpertKochi = () => {
                     placeholder="e.g. Rahul Menon" 
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    style={{ width: '100%', padding: '14px 16px', borderRadius: '12px', border: '1px solid var(--border-color)', background: '#ffffff', fontSize: '14px' }}
+                    style={{ width: '100%', padding: '14px 16px', borderRadius: '12px', border: '1px solid var(--border-color)', background: '#ffffff', fontSize: '14px', boxSizing: 'border-box' }}
                   />
                 </div>
 
@@ -777,7 +780,7 @@ const SeoExpertKochi = () => {
                     placeholder="name@company.com" 
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    style={{ width: '100%', padding: '14px 16px', borderRadius: '12px', border: '1px solid var(--border-color)', background: '#ffffff', fontSize: '14px' }}
+                    style={{ width: '100%', padding: '14px 16px', borderRadius: '12px', border: '1px solid var(--border-color)', background: '#ffffff', fontSize: '14px', boxSizing: 'border-box' }}
                   />
                 </div>
 
@@ -789,7 +792,7 @@ const SeoExpertKochi = () => {
                     placeholder="Enter your phone number" 
                     value={formData.phone}
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                    style={{ width: '100%', padding: '14px 16px', borderRadius: '12px', border: '1px solid var(--border-color)', background: '#ffffff', fontSize: '14px' }}
+                    style={{ width: '100%', padding: '14px 16px', borderRadius: '12px', border: '1px solid var(--border-color)', background: '#ffffff', fontSize: '14px', boxSizing: 'border-box' }}
                   />
                 </div>
 
@@ -800,10 +803,9 @@ const SeoExpertKochi = () => {
                     placeholder="https://yourwebsite.com" 
                     value={formData.website}
                     onChange={(e) => setFormData({ ...formData, website: e.target.value })}
-                    style={{ width: '100%', padding: '14px 16px', borderRadius: '12px', border: '1px solid var(--border-color)', background: '#ffffff', fontSize: '14px' }}
+                    style={{ width: '100%', padding: '14px 16px', borderRadius: '12px', border: '1px solid var(--border-color)', background: '#ffffff', fontSize: '14px', boxSizing: 'border-box' }}
                   />
                 </div>
-
 
                 <div style={{ gridColumn: 'span 2' }}>
                   <label style={{ display: 'block', fontSize: '13px', fontWeight: 600, color: 'var(--text-primary)', marginBottom: '8px' }}>Current Ranking Bottlenecks or Project Goals</label>
@@ -812,7 +814,7 @@ const SeoExpertKochi = () => {
                     placeholder="Describe your current ranking challenges, indexing problems, target keywords, or upcoming website migrations..."
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                    style={{ width: '100%', padding: '14px 16px', borderRadius: '12px', border: '1px solid var(--border-color)', background: '#ffffff', fontSize: '14px' }}
+                    style={{ width: '100%', padding: '14px 16px', borderRadius: '12px', border: '1px solid var(--border-color)', background: '#ffffff', fontSize: '14px', boxSizing: 'border-box' }}
                   />
                 </div>
 
@@ -823,7 +825,7 @@ const SeoExpertKochi = () => {
                 )}
 
                 <div style={{ gridColumn: 'span 2', textAlign: 'center', marginTop: '10px' }}>
-                  <button type="submit" className="btn-primary" style={{ padding: '16px 36px', fontSize: '15px', cursor: 'pointer' }}>
+                  <button type="submit" className="btn-primary" style={{ padding: '16px 36px', fontSize: '15px', cursor: 'pointer', width: '100%', maxWidth: '360px' }}>
                     Send Brief to Senior Consultant <ArrowRight size={16} />
                   </button>
                   <div style={{ fontSize: '12px', color: 'var(--text-secondary)', marginTop: '12px' }}>

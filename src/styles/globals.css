@@ -326,13 +326,168 @@ h3 {
   z-index: 2;
 }
 
-/* Mobile responsive timeline overrides */
+/* ========================================================
+   GLOBAL RESPONSIVE GRID & COMPONENT ARCHITECTURE
+   ======================================================== */
+
+.hero-agency-grid,
+.hero-grid,
+.about-intro-grid,
+.regional-grid,
+.search-grid,
+.structure-grid,
+.seo-ppc-combo,
+.trust-ppc-grid,
+.seo-social-combo,
+.trust-social-grid,
+.platforms-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: clamp(32px, 5vw, 50px);
+  align-items: center;
+}
+
+.hero-agency-grid {
+  grid-template-columns: 1.25fr 0.75fr;
+}
+
+.regional-grid {
+  grid-template-columns: 1.15fr 0.85fr;
+}
+
+.hero-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 36px;
+}
+
+.hero-metrics .metric-box {
+  padding: 16px;
+  background: #ffffff;
+  border-radius: 14px;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+}
+
+.hero-metrics .metric-num {
+  font-family: var(--font-heading);
+  font-size: clamp(20px, 3vw, 26px);
+  font-weight: 700;
+  color: var(--accent-navy);
+}
+
+.hero-metrics .metric-num.text-gold {
+  color: var(--accent-gold);
+}
+
+.hero-metrics .metric-lbl {
+  font-size: 12px;
+  color: var(--text-secondary);
+  font-weight: 500;
+  margin-top: 4px;
+}
+
+.hero-action-btns {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.consultant-diagnostic-card {
+  padding: clamp(24px, 4vw, 36px);
+}
+
+.regional-sub-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.regional-card {
+  background: #ffffff;
+  border-radius: 24px;
+  padding: clamp(24px, 4vw, 36px);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-premium);
+}
+
+.table-responsive-wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border-radius: 18px;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-premium);
+  background: #ffffff;
+  width: 100%;
+}
+
+.table-scroll-hint {
+  display: none;
+  font-size: 12px;
+  color: var(--accent-gold);
+  background: var(--bg-cream);
+  padding: 8px 16px;
+  text-align: center;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.seo-comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  min-width: 620px;
+}
+
+.seo-comparison-table th,
+.seo-comparison-table td {
+  padding: 16px 20px;
+  font-size: 14px;
+}
+
+.audit-card {
+  background: #ffffff;
+  border-radius: 24px;
+  padding: clamp(24px, 5vw, 45px);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-premium);
+  width: 100%;
+}
+
+.audit-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  width: 100%;
+}
+
+@media (max-width: 992px) {
+  .hero-agency-grid,
+  .hero-grid,
+  .about-intro-grid,
+  .regional-grid,
+  .search-grid,
+  .structure-grid,
+  .seo-ppc-combo,
+  .trust-ppc-grid,
+  .seo-social-combo,
+  .trust-social-grid,
+  .platforms-grid {
+    grid-template-columns: 1fr !important;
+    gap: 36px !important;
+  }
+}
+
+/* Mobile responsive timeline & grid overrides */
 @media (max-width: 768px) {
   .container {
     padding: 0 20px !important;
   }
   .section-padding {
-    padding: clamp(64px, 10vw, 96px) 0 !important;
+    padding: clamp(50px, 8vw, 80px) 0 !important;
   }
   .section-header {
     margin-bottom: 36px !important;
@@ -375,6 +530,44 @@ h3 {
   }
   .contact-side-column {
     gap: 20px !important;
+  }
+  .audit-form-grid {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+  .audit-form-grid > div {
+    grid-column: span 1 !important;
+  }
+  .table-scroll-hint {
+    display: block !important;
+  }
+  .seo-comparison-table th,
+  .seo-comparison-table td {
+    padding: 12px 14px !important;
+    font-size: 13px !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-metrics {
+    grid-template-columns: 1fr !important;
+    gap: 12px !important;
+  }
+  .regional-sub-grid {
+    grid-template-columns: 1fr !important;
+    gap: 14px !important;
+  }
+  .hero-action-btns {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    width: 100% !important;
+  }
+  .hero-action-btns .btn-primary,
+  .hero-action-btns .btn-secondary {
+    width: 100% !important;
+    max-width: 100% !important;
+    text-align: center !important;
+    justify-content: center !important;
   }
 }
 
@@ -442,5 +635,14 @@ h3 {
   }
   .contact-map-card {
     min-height: 220px !important;
+  }
+  .consultant-diagnostic-card,
+  .regional-card,
+  .audit-card {
+    padding: 22px 16px !important;
+    border-radius: 18px !important;
+  }
+  .seo-comparison-table {
+    min-width: 540px !important;
   }
 }
