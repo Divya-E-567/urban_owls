@@ -61,7 +61,6 @@ const SeoExpertKochi = () => {
     email: '',
     phone: '',
     website: '',
-    monthlyBudget: '₹25,000 - ₹50,000',
     message: ''
   });
   const [formStatus, setFormStatus] = useState({ loading: false, success: false, error: null });
@@ -207,7 +206,7 @@ const SeoExpertKochi = () => {
       return;
     }
 
-    const whatsappText = `Hello Urban Owls Digital,%0A%0AI would like to schedule a Technical SEO Strategy Audit with your senior consultant in Kochi.%0A%0AName: ${encodeURIComponent(formData.name)}%0AEmail: ${encodeURIComponent(formData.email)}%0APhone: ${encodeURIComponent(formData.phone)}%0AWebsite: ${encodeURIComponent(formData.website || 'Not specified')}%0AMonthly Budget: ${encodeURIComponent(formData.monthlyBudget)}%0AChallenge: ${encodeURIComponent(formData.message || 'Technical SEO Consultation')}`;
+    const whatsappText = `Hello Urban Owls Digital,%0A%0AI would like to schedule a Technical SEO Strategy Audit with your senior consultant in Kochi.%0A%0AName: ${encodeURIComponent(formData.name)}%0AEmail: ${encodeURIComponent(formData.email)}%0APhone: ${encodeURIComponent(formData.phone)}%0AWebsite: ${encodeURIComponent(formData.website || 'Not specified')}%0AChallenge: ${encodeURIComponent(formData.message || 'Technical SEO Consultation')}`;
     const whatsappUrl = `https://wa.me/919847040009?text=${whatsappText}`;
 
     window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
@@ -805,18 +804,6 @@ const SeoExpertKochi = () => {
                   />
                 </div>
 
-                <div style={{ gridColumn: 'span 2' }}>
-                  <label style={{ display: 'block', fontSize: '13px', fontWeight: 600, color: 'var(--text-primary)', marginBottom: '8px' }}>Estimated Monthly SEO Consulting Budget</label>
-                  <select 
-                    value={formData.monthlyBudget}
-                    onChange={(e) => setFormData({ ...formData, monthlyBudget: e.target.value })}
-                    style={{ width: '100%', padding: '14px 16px', borderRadius: '12px', border: '1px solid var(--border-color)', background: '#ffffff', fontSize: '14px' }}
-                  >
-                    <option value="₹25,000 - ₹50,000">₹25,000 - ₹50,000 / month (Local Business & Growth Sprints)</option>
-                    <option value="₹50,000 - ₹1,00,000">₹50,000 - ₹1,00,000 / month (Aggressive Competitor Domination)</option>
-                    <option value="₹1,00,000+">₹1,00,000+ / month (Enterprise & Multi-National Platforms)</option>
-                  </select>
-                </div>
 
                 <div style={{ gridColumn: 'span 2' }}>
                   <label style={{ display: 'block', fontSize: '13px', fontWeight: 600, color: 'var(--text-primary)', marginBottom: '8px' }}>Current Ranking Bottlenecks or Project Goals</label>
