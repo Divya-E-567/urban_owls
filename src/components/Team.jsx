@@ -36,22 +36,6 @@ const teamData = [
     ]
   },
   {
-    name: 'Rijo Raphael (UAE)',
-    role: 'Co-Founder & Chief Strategy Officer (CSO)',
-    image: '/images/team/Rijo Raphael.jpeg',
-    description: "Rijo Raphael leads the company's strategic planning, business operations, and long-term growth initiatives. He focuses on building scalable business strategies, improving operational efficiency, and ensuring every initiative aligns with Urban Owls Digital's vision of innovation, sustainability, and global expansion.",
-    responsibilities: [
-      'Strategic Planning',
-      'Business Operations',
-      'Process Optimization',
-      'Innovation Management',
-      'Project Governance',
-      'Performance Management',
-      'Operational Excellence',
-      'Growth Strategy'
-    ]
-  },
-  {
     name: 'Divya E',
     role: 'Head of Digital Operations & Technology',
     image: '/images/team/Divya_web.jpeg',
@@ -169,218 +153,71 @@ const Team = () => {
           </p>
         </div>
 
-        {/* Uniform Grid Presentation with explicit column area controls */}
+        {/* Uniform Grid Presentation */}
         <motion.div 
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
-          className="team-grid"
+          className="team-layout-wrapper"
         >
-          {/* 1. Jijeesh Minerva (Col 1, Row 1-2) */}
-          <motion.div variants={cardVariants} className="grid-item-jijeesh">
-            <div className="luxury-team-card team-hero-card">
-              <div className="team-photo-overlay" />
-              <div className="team-photo-wrapper">
-                <img src={teamData[0].image} alt={teamData[0].name} className="team-photo" />
-                <div className="team-role-badge">{teamData[0].role}</div>
-              </div>
-              <div className="team-card-content">
-                <h3>{teamData[0].name}</h3>
-                <span className="team-subtitle">{teamData[0].role}</span>
-                <p className="team-description">{teamData[0].description}</p>
-                <div className="responsibilities-title">
-                  <Briefcase size={14} style={{ color: 'var(--accent-gold)' }} />
-                  <span>Responsibilities</span>
+          {/* Leadership Tier - 3 Column Grid */}
+          <div className="team-grid-leadership">
+            {teamData.slice(0, 3).map((member) => (
+              <motion.div key={member.name} variants={cardVariants} className="team-grid-item">
+                <div className="luxury-team-card team-hero-card">
+                  <div className="team-photo-overlay" />
+                  <div className="team-photo-wrapper">
+                    <img src={member.image} alt={member.name} className="team-photo" />
+                    <div className="team-role-badge">{member.role}</div>
+                  </div>
+                  <div className="team-card-content">
+                    <h3>{member.name}</h3>
+                    <span className="team-subtitle">{member.role}</span>
+                    <p className="team-description">{member.description}</p>
+                    <div className="responsibilities-title">
+                      <Briefcase size={14} style={{ color: 'var(--accent-gold)' }} />
+                      <span>Responsibilities</span>
+                    </div>
+                    <div className="responsibilities-grid">
+                      {member.responsibilities.map((resp) => (
+                        <span key={resp} className="resp-pill">{resp}</span>
+                      ))}
+                    </div>
+                  </div>
                 </div>
-                <div className="responsibilities-grid">
-                  {teamData[0].responsibilities.map((resp) => (
-                    <span key={resp} className="resp-pill">{resp}</span>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </motion.div>
+              </motion.div>
+            ))}
+          </div>
 
-          {/* 2. Binu T B (Col 2, Row 1) */}
-          <motion.div variants={cardVariants} className="grid-item-binu">
-            <div className="luxury-team-card card-hug-content team-hero-card">
-              <div className="team-photo-overlay" />
-              <div className="team-photo-wrapper">
-                <img src={teamData[1].image} alt={teamData[1].name} className="team-photo" />
-                <div className="team-role-badge">{teamData[1].role}</div>
-              </div>
-              <div className="team-card-content">
-                <h3>{teamData[1].name}</h3>
-                <span className="team-subtitle">{teamData[1].role}</span>
-                <p className="team-description">{teamData[1].description}</p>
-                <div className="responsibilities-title">
-                  <Briefcase size={14} style={{ color: 'var(--accent-gold)' }} />
-                  <span>Responsibilities</span>
+          {/* Operational & Executive Tier - 4 Column Grid */}
+          <div className="team-grid-executives">
+            {teamData.slice(3).map((member) => (
+              <motion.div key={member.name} variants={cardVariants} className="team-grid-item">
+                <div className="luxury-team-card team-hero-card">
+                  <div className="team-photo-overlay" />
+                  <div className="team-photo-wrapper">
+                    <img src={member.image} alt={member.name} className="team-photo" />
+                    <div className="team-role-badge">{member.role}</div>
+                  </div>
+                  <div className="team-card-content">
+                    <h3>{member.name}</h3>
+                    <span className="team-subtitle">{member.role}</span>
+                    <p className="team-description">{member.description}</p>
+                    <div className="responsibilities-title">
+                      <Briefcase size={14} style={{ color: 'var(--accent-gold)' }} />
+                      <span>Responsibilities</span>
+                    </div>
+                    <div className="responsibilities-grid">
+                      {member.responsibilities.map((resp) => (
+                        <span key={resp} className="resp-pill">{resp}</span>
+                      ))}
+                    </div>
+                  </div>
                 </div>
-                <div className="responsibilities-grid">
-                  {teamData[1].responsibilities.map((resp) => (
-                    <span key={resp} className="resp-pill">{resp}</span>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </motion.div>
-
-          {/* 3. Rijo Raphael (Col 3, Row 1) */}
-          <motion.div variants={cardVariants} className="grid-item-rijo">
-            <div className="luxury-team-card card-hug-content team-hero-card">
-              <div className="team-photo-overlay" />
-              <div className="team-photo-wrapper">
-                <img src={teamData[2].image} alt={teamData[2].name} className="team-photo" />
-                <div className="team-role-badge">{teamData[2].role}</div>
-              </div>
-              <div className="team-card-content">
-                <h3>{teamData[2].name}</h3>
-                <span className="team-subtitle">{teamData[2].role}</span>
-                <p className="team-description">{teamData[2].description}</p>
-                <div className="responsibilities-title">
-                  <Briefcase size={14} style={{ color: 'var(--accent-gold)' }} />
-                  <span>Responsibilities</span>
-                </div>
-                <div className="responsibilities-grid">
-                  {teamData[2].responsibilities.map((resp) => (
-                    <span key={resp} className="resp-pill">{resp}</span>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </motion.div>
-
-          {/* 4. Divya E (Col 4, Row 1-2) */}
-          <motion.div variants={cardVariants} className="grid-item-divya">
-            <div className="luxury-team-card team-hero-card">
-              <div className="team-photo-overlay" />
-              <div className="team-photo-wrapper">
-                <img src={teamData[3].image} alt={teamData[3].name} className="team-photo" />
-                <div className="team-role-badge">{teamData[3].role}</div>
-              </div>
-              <div className="team-card-content">
-                <h3>{teamData[3].name}</h3>
-                <span className="team-subtitle">{teamData[3].role}</span>
-                <p className="team-description">{teamData[3].description}</p>
-                <div className="responsibilities-title">
-                  <Briefcase size={14} style={{ color: 'var(--accent-gold)' }} />
-                  <span>Responsibilities</span>
-                </div>
-                <div className="responsibilities-grid">
-                  {teamData[3].responsibilities.map((resp) => (
-                    <span key={resp} className="resp-pill">{resp}</span>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </motion.div>
-
-          {/* 5. Wide Single Image Filler Card (Col 2-3, Row 2) */}
-          <motion.div variants={cardVariants} className="grid-item-filler">
-            <div className="team-fill-image" />
-          </motion.div>
-
-          {/* 6. Mahesh (Col 1, Row 3) */}
-          <motion.div variants={cardVariants} className="grid-item-mahesh">
-            <div className="luxury-team-card team-hero-card">
-              <div className="team-photo-overlay" />
-              <div className="team-photo-wrapper">
-                <img src={teamData[4].image} alt={teamData[4].name} className="team-photo" />
-                <div className="team-role-badge">{teamData[4].role}</div>
-              </div>
-              <div className="team-card-content">
-                <h3>{teamData[4].name}</h3>
-                <span className="team-subtitle">{teamData[4].role}</span>
-                <p className="team-description">{teamData[4].description}</p>
-                <div className="responsibilities-title">
-                  <Briefcase size={14} style={{ color: 'var(--accent-gold)' }} />
-                  <span>Responsibilities</span>
-                </div>
-                <div className="responsibilities-grid">
-                  {teamData[4].responsibilities.map((resp) => (
-                    <span key={resp} className="resp-pill">{resp}</span>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </motion.div>
-
-          {/* 7. Vidhu (Col 2, Row 3) */}
-          <motion.div variants={cardVariants} className="grid-item-vidhu">
-            <div className="luxury-team-card team-hero-card">
-              <div className="team-photo-overlay" />
-              <div className="team-photo-wrapper">
-                <img src={teamData[5].image} alt={teamData[5].name} className="team-photo" />
-                <div className="team-role-badge">{teamData[5].role}</div>
-              </div>
-              <div className="team-card-content">
-                <h3>{teamData[5].name}</h3>
-                <span className="team-subtitle">{teamData[5].role}</span>
-                <p className="team-description">{teamData[5].description}</p>
-                <div className="responsibilities-title">
-                  <Briefcase size={14} style={{ color: 'var(--accent-gold)' }} />
-                  <span>Responsibilities</span>
-                </div>
-                <div className="responsibilities-grid">
-                  {teamData[5].responsibilities.map((resp) => (
-                    <span key={resp} className="resp-pill">{resp}</span>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </motion.div>
-
-          {/* 8. Athira (Col 3, Row 3) */}
-          <motion.div variants={cardVariants} className="grid-item-athira">
-            <div className="luxury-team-card team-hero-card">
-              <div className="team-photo-overlay" />
-              <div className="team-photo-wrapper">
-                <img src={teamData[6].image} alt={teamData[6].name} className="team-photo" />
-                <div className="team-role-badge">{teamData[6].role}</div>
-              </div>
-              <div className="team-card-content">
-                <h3>{teamData[6].name}</h3>
-                <span className="team-subtitle">{teamData[6].role}</span>
-                <p className="team-description">{teamData[6].description}</p>
-                <div className="responsibilities-title">
-                  <Briefcase size={14} style={{ color: 'var(--accent-gold)' }} />
-                  <span>Responsibilities</span>
-                </div>
-                <div className="responsibilities-grid">
-                  {teamData[6].responsibilities.map((resp) => (
-                    <span key={resp} className="resp-pill">{resp}</span>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </motion.div>
-
-          {/* 9. Aparna (Col 4, Row 3) */}
-          <motion.div variants={cardVariants} className="grid-item-aparna">
-            <div className="luxury-team-card team-hero-card">
-              <div className="team-photo-overlay" />
-              <div className="team-photo-wrapper">
-                <img src={teamData[7].image} alt={teamData[7].name} className="team-photo" />
-                <div className="team-role-badge">{teamData[7].role}</div>
-              </div>
-              <div className="team-card-content">
-                <h3>{teamData[7].name}</h3>
-                <span className="team-subtitle">{teamData[7].role}</span>
-                <p className="team-description">{teamData[7].description}</p>
-                <div className="responsibilities-title">
-                  <Briefcase size={14} style={{ color: 'var(--accent-gold)' }} />
-                  <span>Responsibilities</span>
-                </div>
-                <div className="responsibilities-grid">
-                  {teamData[7].responsibilities.map((resp) => (
-                    <span key={resp} className="resp-pill">{resp}</span>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </motion.div>
+              </motion.div>
+            ))}
+          </div>
         </motion.div>
 
         {/* Collective Team Group Photo Banner */}
@@ -420,14 +257,28 @@ const Team = () => {
       </div>
 
       <style>{`
-        /* Mobile / Tablet grid styles */
-        .team-grid {
-          display: grid;
-          grid-template-columns: repeat(2, 1fr);
-          gap: 24px;
+        .team-layout-wrapper {
+          display: flex;
+          flex-direction: column;
+          gap: 30px;
         }
-        .grid-item-filler {
-          display: none; /* Hidden on mobile/tablet */
+
+        .team-grid-leadership {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 30px;
+        }
+
+        .team-grid-executives {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          gap: 30px;
+        }
+
+        .team-grid-item {
+          display: flex;
+          flex-direction: column;
+          height: 100%;
         }
 
         /* Luxury Team Card */
@@ -441,16 +292,12 @@ const Team = () => {
           display: flex;
           flex-direction: column;
           height: 100%;
+          width: 100%;
           transition: var(--transition-smooth);
         }
         .luxury-team-card:hover {
           border-color: var(--accent-gold);
           box-shadow: var(--shadow-hover);
-        }
-
-        /* Prevent stretching for short leaders cards inside CSS grid */
-        .luxury-team-card.card-hug-content {
-          height: auto;
         }
 
         .team-photo-wrapper {
@@ -552,65 +399,6 @@ const Team = () => {
           border-radius: 30px;
         }
 
-        /* Laptop View Area Mapping */
-        @media (min-width: 992px) {
-          .team-grid {
-            grid-template-columns: repeat(4, 1fr);
-            gap: 30px;
-          }
-          .grid-item-jijeesh {
-            grid-column: 1;
-            grid-row: 1 / span 2;
-          }
-          .grid-item-binu {
-            grid-column: 2;
-            grid-row: 1;
-          }
-          .grid-item-rijo {
-            grid-column: 3;
-            grid-row: 1;
-          }
-          .grid-item-divya {
-            grid-column: 4;
-            grid-row: 1 / span 2;
-          }
-          .grid-item-filler {
-            display: block;
-            grid-column: 2 / span 2;
-            grid-row: 2;
-            height: 100%;
-          }
-          .grid-item-mahesh {
-            grid-column: 1;
-            grid-row: 3;
-          }
-          .grid-item-vidhu {
-            grid-column: 2;
-            grid-row: 3;
-          }
-          .grid-item-athira {
-            grid-column: 3;
-            grid-row: 3;
-          }
-          .grid-item-aparna {
-            grid-column: 4;
-            grid-row: 3;
-          }
-        }
-
-        /* Single Wide Filler Image */
-        .team-fill-image {
-          width: 100%;
-          min-height: 280px;
-          height: 100%;
-          border-radius: var(--radius-lg);
-          overflow: hidden;
-          box-shadow: var(--shadow-premium);
-          border: 1px solid var(--border-color);
-          background: linear-gradient(135deg, rgba(8, 17, 37, 0.2), rgba(8, 17, 37, 0.45)), url('/images/hero_office_bg.jpg') no-repeat center center / cover;
-          transition: var(--transition-smooth);
-        }
-
         .team-hero-card {
           position: relative;
           background: linear-gradient(135deg, rgba(8, 17, 37, 0.92), rgba(8, 17, 37, 0.72)), url('/images/hero_office_bg.jpg') center / cover no-repeat;
@@ -646,10 +434,6 @@ const Team = () => {
         .team-hero-card .resp-pill {
           background: rgba(255, 255, 255, 0.12);
           border-color: rgba(255, 255, 255, 0.18);
-        }
-        .team-fill-image:hover {
-          border-color: var(--accent-gold);
-          transform: translateY(-2px);
         }
 
         /* Team Group Photo Banner */
@@ -716,13 +500,27 @@ const Team = () => {
 
         /* Responsive Settings */
         @media (max-width: 1200px) {
-          /* Fallback dynamic auto-height alignment on smaller grids */
-          .team-grid {
+          .team-grid-leadership {
             grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+          }
+          .team-grid-executives {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
           }
         }
         @media (max-width: 991px) {
-          .team-grid {
+          .team-grid-leadership {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+          }
+          .team-grid-leadership > :last-child:nth-child(odd) {
+            grid-column: 1 / -1;
+            max-width: 500px;
+            margin: 0 auto;
+            width: 100%;
+          }
+          .team-grid-executives {
             grid-template-columns: repeat(2, 1fr);
             gap: 24px;
           }
@@ -744,8 +542,13 @@ const Team = () => {
           }
         }
         @media (max-width: 576px) {
-          .team-grid {
+          .team-grid-leadership,
+          .team-grid-executives {
             grid-template-columns: 1fr;
+            gap: 20px;
+          }
+          .team-grid-leadership > :last-child:nth-child(odd) {
+            max-width: 100%;
           }
         }
       `}</style>
